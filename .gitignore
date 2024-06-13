@@ -2,6 +2,7 @@
 .vscode
 
 /rasa-example
+notes.txt
 
 .rasa
 */models

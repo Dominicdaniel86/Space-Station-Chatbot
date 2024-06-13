@@ -1,3 +1,61 @@
 version: "3.1"
 
 nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - howdy
+    - greetings
+    - yo
+    - good morning
+    - good evening
+    - good afternoon
+    - good day
+    - goodmorning
+    - goodevening
+    - goodafternoon
+    - hey there
+    - howdy partner
+    - what's up
+    - nice seeing you
+    - cheers mate
+  
+- intent: goodbye
+  examples: |
+    - bye
+    - later
+    - peace
+    - farewell
+    - bye bye
+    - good bye
+    - goodbye
+    - good night
+    - goodnight
+    - see you
+    - see you soon
+    - see you later
+    - so long
+    - until next time
+    - have a nice day
+
+- intent: hello_there
+  examples: |
+    - hello there
+
+- intent: what_are_you
+  examples: |
+    - what are you?
+    - what exactly are you?
+    - are you a bot?
+    - are you a robot?
+    - are you human?
+    - are you a person
+    - are you a robot or human?
+    - are you an AI?
+    - who are you?
+    - explain what you are
+    - tell me about yourself
+    - what is your purpose
+

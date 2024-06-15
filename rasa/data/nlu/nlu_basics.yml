@@ -1,0 +1,636 @@
+version: "3.1"
+
+nlu:
+# greet/ goodbye
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - howdy
+    - greetings
+    - yo
+    - good morning
+    - good evening
+    - good afternoon
+    - good day
+    - goodmorning
+    - goodevening
+    - goodafternoon
+    - hey there
+    - howdy partner
+    - what's up
+    - nice seeing you
+    - cheers mate
+  
+- intent: goodbye
+  examples: |
+    - bye
+    - later
+    - peace
+    - farewell
+    - bye bye
+    - good bye
+    - goodbye
+    - good night
+    - goodnight
+    - see you
+    - see you soon
+    - see you later
+    - so long
+    - until next time
+    - have a nice day
+
+- intent: hello_there
+  examples: |
+    - hello there
+
+# reactions
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - yup
+    - yeah
+    - indeed
+    - sure
+    - agreed
+    - exactly
+    - right
+    - correct
+    - absolutely
+    - definitely
+    - totally
+    - precisely
+    - obviously
+    - positive
+    - i agree
+    - of course
+    - for sure
+    - sure thing
+    - you bet
+    - no doubt
+    - that's correct
+    - that's right
+    - that sounds good
+    - without a dobut
+    - you got it
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - thanks so much
+    - thank you so much
+    - thank you very much
+    - thanks for your help
+    - thanks a million
+    - thank you kindly
+    - thanks a ton
+    - thank you ever so much
+    - many thanks
+    - a big thank you
+    - i can't thank you enough
+    - appreciated
+    - much appreciated
+    - you're a lifesaver
+    - i appreciate it
+    - i'm so greatful
+    - i'm thankful
+    - i'm deeply grateful
+    - i owe you
+
+- intent: deny
+  examples: |
+    - no
+    - nah
+    - wrong
+    - nope
+    - never
+    - no way
+    - no chance
+    - negative
+    - not really
+    - not quite
+    - definetly not
+    - certainly not
+    - i disagree
+    - i don't think so
+    - i don't agree
+    - absolutely not
+    - unfortunately not
+    - not at all
+    - by no mean
+    - that's not right
+
+- intent: insult
+  examples: |
+    - idiot
+    - loser
+    - moron
+    - dumbass
+    - shut up
+    - get lost
+    - you suck
+    - you are stupid
+    - you are an idiot
+    - you are dumb
+    - you are the worst
+    - you are a disgrace
+    - you are awful
+    - you are ridiculous
+    - you are a joke
+    - you're useless
+    - you're a fool
+    - you're horrible
+    - you're a jerk
+    - you're worthless
+    - you're pathetic
+    - you're a moron
+    - you're a clown
+    - you make no sense
+    - fuck you
+    - asshole
+    - bastard
+    - bitch
+    - son of a bitch
+    - what a joke
+    - what an idiot
+    - nobody likes you
+    - get out of here
+
+- intent: happy
+  examples: |
+    - i am happy
+    - i am really pleased
+    - everything is going well
+    - everything is good
+    - today is good
+    - this morning is good
+    - this day is good
+    - this evening is perfect
+    - life is good
+    - i couldn't be happier
+    - i am so happy today
+    - i am over the moon
+    - happy
+    - i'm feeling great
+    - i'm feeling amazing
+    - i'm feeling wonderful
+    - feeling like a king
+    - i am amazing
+    - i am great
+    - so good
+    - so happy
+    - so so perfect
+    - so perfect
+    - so far so good
+
+- intent: unhappy
+  examples: |
+    - i am unhappy
+    - i am sad
+    - i'm feeling down
+    - i'm upset
+    - i feel terrible
+    - i couldn't be sadder
+    - i am in a bad mood
+    - life is bad
+    - life sucks
+    - i'm feelign miserable
+    - the day was horrible
+    - my day is bad
+    - my day is horrible
+    - this morning sucks
+    - this morning is bad
+    - this evening is bad
+    - nothing is working
+    - i am disappointed
+    - so sad
+    - so so sad
+    - not good
+    - not very good
+    - i don't feel well
+    - not too good
+    - i am down
+    - i am feeling down
+    - life is unfair
+
+- intent: your_good
+  examples: |
+    - you are doing a great job
+    - you are awesome
+    - you are so good
+    - you are really helpful
+    - you are fantastic
+    - you are wonderful
+    - you are the best
+    - you are a lifesaver
+    - you are a hero
+    - you're really good
+    - amazing answer
+    - perfect answer
+    - good answer
+    - that's what i wanted to know
+    - good work
+    - that's what i wanted to hear
+    - that's what i needed
+    - amazing work
+    - you are so helpful
+    - i appreciate your support
+
+- intent: your_bad
+  examples: |
+    - you are doing a bad job
+    - you are not helpful
+    - you are not helpful at all
+    - you are not good at this
+    - you are the worst
+    - you aren't helpful
+    - bad work
+    - wrong answer
+    - wrong
+    - that's a bad answer
+    - that's not what i wanted to know
+    - that's not what i needed
+    - you are disappointing
+    - you are aweful
+    - you are not doing well
+    - you are frustrating me
+    - you are really bad at this
+    - i don't appreciate your work
+    - i don't appreciate you
+    - you are frustrating me
+    - terrible
+    - you are terrible
+
+# identity
+- intent: what_are_you
+  examples: |
+    - what are you
+    - what exactly are you
+    - are you a bot
+    - are you a robot
+    - are you human
+    - are you a person
+    - are you a robot or human
+    - are you an AI
+    - who are you
+    - explain what you are
+    - tell me about yourself
+    - are you real
+    - do you have feelings
+    - are you a chatbot
+    - can you tell me what you are
+    - are you a software
+    - are you a real person
+    - are you a digital assistant
+    - can you tell me about yourself
+    - how would you describe yourself
+    - describe yourself
+    - are you not real
+
+- intent: ask_name
+  examples: |
+    - what is your name
+    - do you have a name
+    - how should i call you
+    - can you tell me your name
+    - what are you called
+    - what's the name you use
+    - do you go by any name
+    - are you known by any name
+    - how can i call you
+    - do you have a title
+    - what should i refer you as
+    - are you named
+    - can you introduce your name to me
+    - how do people address you
+    - how do you want to be known
+    - how do you want to be called
+
+- intent: ask_contact_info
+  examples: |
+    - how can i contact support
+    - can i get your contact information
+    - where can i find contact details
+    - who do i reach out for help
+    - who do i reach out for 
+    - i want to contact your creators
+    - how do i get in touch with customer service
+    - what is the customer support phone number
+    - what is the contact address
+    - how can i send an email for support
+    - i want to speak to your creators
+    - how can i contact the team behind you
+    - how do i contact your team
+    - can you provide me the contact information
+    - how can i contact the support team
+    - how can i reach your developers
+
+- intent: ask_capabilities
+  examples: |
+    - what can you do
+    - can you tell me about your features
+    - which features do you got
+    - what services do you offer
+    - how can you help me
+    - what functions do you have
+    - can you explain your capabilites
+    - what tasks can you perform
+    - what are you capable of
+    - how can you assist me
+    - what kind of help can you provide
+    - what skills do you have
+    - what kind of tasks can you execute
+    - can you describe your features
+    - what can you assist with
+    - how can you help me
+    - what are your strenghts
+    - what are your weaknesses
+    - what can you not do
+    - what are your limits
+    - what kind of functions can you fulfill
+
+- intent: ask_purpose
+  examples: |
+    - what is your purpose
+    - why do you exist
+    - what is your main function
+    - what are you here for
+    - why were you created
+    - what is your objective
+    - what is the reason for you existence
+    - can you tell me your purpose
+    - what is your goal
+    - for what were you created
+    - what do you aim to achieve
+    - what are you meant to do
+    - what is your mission
+    - why are you here
+    - what is your main goal
+    - what is your goal in this system
+    - what do you exist to do
+    - what is the objective behind your creation
+    - what is your intended purpose
+    - for what reason were you created
+    - what are you there for
+    - which purpose are you fulfilling
+    - which role do you play
+
+- intent: ask_creator 
+  examples: |
+    - who created you
+    - who is your creator
+    - can you tell me who made you
+    - who is your developer
+    - who built you
+    - who designed you
+    - who is behind your creation
+    - can you tell me about your creator
+    - who programmed you
+    - who is responsible for you creation
+    - who is responsible for you
+    - who is maintaining you
+    - who owns you
+    - who is the creator of this ai
+    - who constructed you
+    - tell me something about your developer
+    - who authored you
+    - who engineered you
+    - what can you tell me about your creator
+    - what can you tell me about your creators
+    - who named you
+
+- intent: ask_creation
+  examples: |
+    - how were you created
+    - can you explain me your creation
+    - can you explain me how you were created
+    - what is the process behing your creation
+    - what was the process behind your creation
+    - how were you made
+    - how did you come into existence
+    - how were you developed
+    - what was the method of your creation
+    - how did your development take place
+    - what is the story behind your creation
+    - can you describe your creation process
+    - how where you programmed
+    - how did your creators make you
+    - what steps were taken to build you
+    - how could you be built
+    - how did you get created
+    - what was involved in your creation
+    - how did your construction happen
+    - what steps were involved in your creation
+
+- intent: ask_technology
+  examples: |
+    - what technology do you use
+    - with wich technology were you created
+    - can you tell me about the tech behind you
+    - what is the technology that powers you
+    - which technology is 
+    - can you describe the technology behind you
+    - can you tell me how you work
+    - what tools are you used to run on
+    - which tools are important for your runtime
+    - what can you tell me about your used technologies
+    - tell me about your infrastructure
+    - tell me about your underlying infrastructure
+    - what tech stack are you built on
+    - what is your underlying technology
+    - what software are you based on
+    - what platforms do you use
+    - what programming languages were used in your creation
+    - what programming languages do you use
+    - what frameworks do you use
+    - what are the main technologies you use
+    - how does your technology work
+    - what kind of algorithms are you based on
+
+# small talk
+- intent: ask_real_time
+  examples: |
+    - what time is it
+    - can you tell me the current time
+    - do you know the time
+    - whats the time now
+    - could you give me the time please
+    - where am i
+    - where are you
+    - can you tell me my current location
+    - can you tell me your current location
+    - what's my location
+    - what's your location
+    - do you know where i am
+    - can you find my location
+    - what's the wheater like today
+    - can you tell me the current wheater
+    - hows the weather outside
+    - is it going to rain today
+    - whats the forecast for today
+    - whats the date today
+    - can you tell me today's date
+    - whats today's date
+    - do you know the date
+    - what is the date today
+
+- intent: ask_mood
+  examples: |
+    - how are you feeling today
+    - what's your mood
+    - are you in a good mood
+    - how do you feel today
+    - how's your mood today
+    - how are you holding up today
+    - how's your mood lately
+    - what's up with you today
+    - what's your mood like today
+    - how are you
+    - how are you doing
+    - how are you feeling
+    - how's it going
+    - how's your day going
+    - are you feeling okay
+    - what's your emotional state today
+    - how are things with you
+    - how are you doing today
+    - how's everything going
+    - how have you been feeling lately
+    - how's your day been
+    - how are you feeling right now
+    - how's life treating you today
+    - how's your day been so far
+    - what's your mental state today
+    - how's your day shaping up
+    - what's going on with your feelings today
+    - how are you emotionally today
+    - are you feeling good today
+    - what's your state of mind right now
+    - how are you coping today
+    - what's your current mood
+    - how's your emotional state
+    - what's your general mood today
+    - how's everything with you today
+    - what mood are you in today
+    - how do you feel about today
+
+- intent: ask_joke
+  examples: |
+    - jokes please
+    - can you tell me a joke
+    - can you tell me a funny joke
+    - can you give me a hilarious joke
+    - can you share a joke with me
+    - tell a joke
+    - tell me a joke
+    - tell me something funny
+    - tell me something hilarious
+    - tell me something that will make me smile
+    - do you have any jokes
+    - do you know any jokes
+    - do you have a joke for me?
+    - do you have a joke that will make me smile
+    - give me a joke
+    - whats the best joke you know
+    - make me laugh
+    - make me smile
+    - show me how funny you are
+
+# explanation/ faq
+- intent: ask_help
+  examples: |
+    - help me
+    - i need help
+    - i am confused
+    - help please
+    - help me please
+    - i need some assistance
+    - can you help me
+    - can you assist me
+    - can you provide help
+    - can you provide assistance
+    - i need your help
+    - i am looking for help
+    - could you help me out
+    - could you please help me
+    - i'm looking for help
+    - i am lost
+    - i am totally lost
+
+- intent: ask_faq
+  examples: |
+    - what are some frequently asked questions
+    - give me a faq
+    - show me the faq
+    - do you have a faq section
+    - where can i find the faq
+    - where can i read the faq
+    - can you show me the frequently asked questions
+    - i need to see the faq
+    - is there a faq
+    - is there a faq section
+    - give me the faq
+
+- intent: report_bug
+  examples: |
+    - i want to report a bug
+    - there is a bug
+    - i found a bug
+    - there is a bug i found
+    - can i report a bug
+    - i need to report an issue
+    - i discovered a bug
+    - i encountered a bug
+    - how can i report a bug
+    - can you take a bug report
+    - i need to report a bug i found
+    - somethings bugged
+    - something is not working
+    - you are not working
+    - something broke
+    - you are broken
+
+- intent: feedback
+  examples: |
+    - i want to give feedback
+    - can i provide some feedback
+    - i have feedback
+    - i want to share my thoughts
+    - i want to share my feedback
+    - i need to provide feedback
+    - i have some input for you
+    - i want to rate you
+    - i want to evaluate you
+    - i want to leave a comment
+    - can i give som,e feedback
+    - i want to share my thoughts about you
+    - how can i rate you
+    - i have feedback about you
+    - i want to improve you with my feedback
+    - i have some recommendations
+
+- intent: ask_recommendations
+  examples: |
+    - how do i start
+    - how should i start
+    - how can i start
+    - do you have a starting point
+    - what's the starting point
+    - what would you suggest
+    - what can you recommend
+    - i need an overview
+    - can you recommend something
+    - can you recommend a topic
+    - can you recommend what i could ask
+    - what would you suggest
+    - i need some suggestions
+    - i need an advice what to ask
+    - what are your topics
+
+# (settings/ preferences)
+# set_preferences
+# get_preferences

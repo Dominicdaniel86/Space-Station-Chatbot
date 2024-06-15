@@ -4,7 +4,32 @@ intents:
   - greet
   - goodbye
   - hello_there
+  - affirm
+  - thank_you
+  - deny
+  - insult
+  - happy
+  - unhappy
+  - your_good
+  - your_bad
   - what_are_you
+  - ask_name
+  - ask_contact_info
+  - ask_capabilities
+  - ask_purpose
+  - ask_creator
+  - ask_creation
+  - ask_technology
+  - ask_real_time
+  - ask_mood
+  - ask_joke
+  - ask_help
+  - ask_faq
+  - report_bug
+  - feedback
+  - ask_recommendations
+# - set_preferences
+# - get_preferences
 
 responses:
   utter_greet:

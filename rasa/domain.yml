@@ -30,6 +30,26 @@ intents:
   - ask_recommendations
 # - set_preferences
 # - get_preferences
+  - everyday_life
+  - food
+  - sleep
+  - fun_fact
+  - skills
+  - preparation
+  - training_duration
+  - get_started
+  - space_station_purpose
+  - space_station_goals
+  - space_station_and_science
+  - space_station_stations
+  - space_station_planned
+  - sapce_station_nations
+  - experiment_kinds
+  - experiment_benefits_for_earth
+  - experiment_most_relevant
+  - challenges
+  - isolation
+  - psychological_effects
 
 responses:
   utter_greet:

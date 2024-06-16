@@ -1,0 +1,56 @@
+version: "3.1"
+
+nlu:
+# everyday life
+- intent: everyday_life
+  examples: |
+    - what is daily life like on a space station
+    - can you tell me about the routine on the ISS
+    - how do astronauts spend their days on the space station
+
+- intent: food
+  examples: |
+    - what kind of foo do astronauts eat in space
+    - how do astronauts get their meals on the space station
+    - do astronauts eat normal food in space
+
+- intent: sleep
+  examples: |
+    - how do astronauts sleep in space
+    - is sleeping different on the ISS compared to earth
+    - how do you sleep without gravity
+
+# training
+- intent: skills
+
+- intent: preparation
+
+- intent: training_duration
+
+# purpose of space stations and space traveling
+- intent: space_station_purpose
+
+- intent: space_station_goals
+
+- intent: space_station_and_science
+
+# about space stations
+- intent: space_station_stations
+
+- intent: space_station_planned
+
+- intent: space_station_nations
+
+# experiments and research
+- intent: experiment_kinds
+
+- intent: experiment_benefits_for_earth
+
+- intent: experiment_most_relevant
+
+# challenges and psychological effects 
+- intent: challenges
+
+- intent: isolation
+
+- intent: psychological_effects

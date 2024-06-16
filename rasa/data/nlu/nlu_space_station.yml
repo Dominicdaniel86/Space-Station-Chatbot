@@ -196,7 +196,7 @@ nlu:
     - I want to go to space
     - I want to be part of a space station team
 
-# purpose of space stations and space traveling (to-do)
+# purpose of space stations and space traveling
 - intent: space_station_purpose
   examples: |
     - what is the purpose of space stations
@@ -262,7 +262,7 @@ nlu:
     - how does the space station support scientific advancements
     - what scientific studius are performed on the space station
 
-# about space stations + history (to-do)
+# about space stations + history
 - intent: space_station_stations
   examples: |
     - what space stations are there
@@ -329,16 +329,136 @@ nlu:
     - which countries are part of space station collaborations
     - which countries collaborate in space station programs
 
-# experiments and research (to-do)
+# experiments and research
 - intent: experiment_kinds
+  examples: |
+    - what kinds of experiments are done on a space station
+    - can you categorize the experiments that are done on a space station
+    - what kinds of experiments are done on the ISS
+    - what experiments are done on the space stations
+    - for what experiments are space stations used
+    - what types of experiments are conducted in space
+    - can you list the different experiments done on space stations
+    - please tell me what experiments are done on space stations
+    - what experiments do astronauts perform on the ISS
+    - what kinds of experiments do astronauts do
+    - what scientific experiments are carried out on the space station
+    - what research activities are done on space stations
+    - what are the various experiments on the ISS
+    - can you tell me about the experiments done in space
+    - what are the primary experiments on the ISS
+    - which experiments are done on the ISS
+    - which experiments are done on space stations
+    - list me the kinds of experiments that are done on space stations
+    - what sort of scientific studies are done on space stations
 
 - intent: experiment_benefits_for_earth
+  examples: |
+    - how do we profit of the experiments here on earth
+    - what does the results of the space stations deliver to us on earth
+    - how do space station experiments benefit earth
+    - what are the benefits of ISS experiments for earth
+    - how do experiments in space help people on Earth
+    - what advantages do space station experiments provide to Earth
+    - how do I profit from space stations
+    - how do experiments of space stations impact my life 
+    - how do I experience the achievements of space station results
+    - can you explain the benefits of space experiments for Earth
+    - how do ISS research activities impact life on Earth
+    - what are the Earthly benefits of space station experiments
+    - how do scientific studies on the ISS benefit humanity
+    - what are the positive effects of space experiments on Earth
+    - how do space station experiments contribute to improvements on Earth
+    - do the space experiment impact our life on earth
+    - how do space experiments help us in our lives
+    - is space research impacting life on earth
+    - does humanity benefit from space station researchs
+    - how do we benefit from space station experiments
 
 - intent: experiment_most_relevant
+  examples: |
+    - what experiment was the most relevant that the ISS has done
+    - what are the most important results that space stations delivered this far
+    - list me the achievements that space exeriments delivered us
+    - what are the most relevant experiment results on the ISS
+    - which experiments on the space station are the most important
+    - what are the most significant experiments in space
+    - can you list the key experiments on the ISS
+    - which space station experiments are the most impactful
+    - what experiment had the most impact yet
+    - what experiments are the most relevant
+    - what are the main experiments that are done on space stations
+    - what are the main results that space station experiments delivered
+    - what are the top experiments on the ISS
+    - can you tell me about the most relevant research on space stations
+    - what are the crucial experiments done on the ISS
+    - which experiments on the space station are the most noteworthy
+    - what are the most important scientific studies on the IS
 
-# challenges and psychological effects (to-do)
+# challenges and psychological effects
 - intent: challenges
+  examples: |
+    - what are the challenges for astronauts
+    - what challenges do you face on a space station
+    - what difficult situations are you confronted with on a space station
+    - what difficulties do you need to handle on a space station
+    - what challenges do you face when living in space
+    - what challenges do astronauts face in space
+    - what are the main difficulties of living on the ISS
+    - what are the main difficulties of being an astronaut
+    - can you describe the challenges of space travel
+    - please explain the challenges of being an astronaut
+    - what are the hardest parts of being an astronaut
+    - what difficultires are associated with living in space
+    - what are the biggest challenges on the ISS
+    - how do astronauts deal with the challenges of space
+    - how do astronauts deal with the challenges of space
+    - what problems do astronauts have to face in space
+    - what are the most significant challenges of space traveler
+    - what challenges would I face when I would become an astronaut
 
 - intent: isolation
+  examples: |
+    - how does isolation affect astronauts
+    - is living in space lonely
+    - do you get lonely by living in space
+    - how lonely is living in space
+    - will I be lonely in space
+    - do astronauts miss their fríends and family
+    - how do astronauts handle isolation in space
+    - what is it like to be isolated on the ISS
+    - how does isolation affect astronauts on the space stations
+    - what measures are tkane to cope with isolation in space
+    - how do astronauts deal with being isolated in space
+    - what are the effects of isolation on astronauts
+    - how do astronauts manage isolation during long missions
+    - what challenges come with isolation on the ISS
+    - how is isolation addressed on the space station
+    - what strategies are used to combat isolation in space
+    - how can the isolation in space be treated
+    - how bad is the isolation on a space station
+    - are astronauts lonely
+    - how does it feel like to be isolated on a space station
 
 - intent: psychological_effects
+  examples: |
+    - which psychological effects do astronauts experience
+    - how does living in space affect astronauts
+    - does living in a space station cause depression
+    - how easy do astronauts get depressed
+    - what are the psychological effect of space travel
+    - how does living in space affects astronaut's mental health
+    - what are the psychological effects of space travel
+    - how does space travel affect your psyche
+    - explain the effects of space travel on the astronauts psychological
+    - how does living in space affect astronauts' mental health
+    - what psychological challenges do astronauts face
+    - how do space missions impact mental well-being
+    - what are the mental health effects of being on the ISS
+    - how do astronauts cope with psychological stress in space
+    - what are the emotional effects of long-duration space missions
+    - how is mental health maintained on the space station
+    - what psychological support is provided to astronauts
+    - what are the mental challenges of living in space
+    - what is done for the psychology of astronauts in space
+    - how bad is living in space for your psyche

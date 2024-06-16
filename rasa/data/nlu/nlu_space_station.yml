@@ -4,51 +4,220 @@ nlu:
 # everyday life
 - intent: everyday_life
   examples: |
+    - how does the daily life of astronauts look like
     - what is daily life like on a space station
     - can you tell me about the routine on the ISS
     - how do astronauts spend their days on the space station
+    - what do astronaut do every day
+    - describe a typical day for an astronaut
+    - what's a normal day like for someone on ISS
+    - can you describe the daily activities of astronauts
+    - how do astronauts manage their daily schedules
+    - what is a regular day in the life of an astronaut like
+    - explain the routine of astronauts to me
+    - how does the daily life on a space station look like
+    - daily life on a space station
+    - descibe the routines on a space station to me
+    - space station daily life
+    - routines on a space station
+    - everyday life on space stations
+    - daily life in space
+    - daily tasks in space
+    - daily to-dos on ISS
 
 - intent: food
   examples: |
-    - what kind of foo do astronauts eat in space
+    - what do astronauts eat
+    - what to eat in space
+    - food in space
+    - what kind of food can you eat in space
+    - eating in space
+    - what kind of food do astronauts eat in space
     - how do astronauts get their meals on the space station
     - do astronauts eat normal food in space
+    - is space food nasty
+    - how does space food taste like
+    - how do astronauts consume
+    - what do astronauts consume
+    - breakfest for astronauts
+    - meals for astronauts
+    - launch for astronauts
+    - dinner for astronauts
+    - breakfest on space stations
+    - meals on space stations
+    - launch on space stations
+    - dinner on space stations
+    - do astronauts eat normal food in space
+    - how do astronauts prepare food in space
+    - what are the challenges of eating space
+    - how do you eat in space
+    - how is eating like in space
+    - do astronauts have spacial meals
+    - what types of food are available in space
+    - what types of food are available in space stations
+    - what can you eat on ISS
+    - is space food tasty
+    - is space food good
+    - how good is space food
+    - how bad is space food
+    - is space food disgusting
 
 - intent: sleep
   examples: |
     - how do astronauts sleep in space
     - is sleeping different on the ISS compared to earth
     - how do you sleep without gravity
+    - where do astronauts sleep on the ISS
+    - how do you sleep on the ISS
+    - where do astronauts sleep on the ISS
+    - how do you sleep in microgravity
+    - how do you sleep in gravity
+    - how do you sleep in space
+    - do astronauts have beds
+    - are there beds on a space station
+    - what is sleeping like on the ISS
+    - do astronauts have beds in space
+    - can you explain how astronauts sleep
+    - is it hard to sleep in space
+    - how long do astronauts sleep in space
+    - how is sleeping in space like
+    - do astronauts sleep
+    - can you sleep good on a space station
+    - sleeping on ISS
+    - sleeping on space station
 
-# training
+- intent: fun_fact
+  examples: |
+    - tell me a fun fact
+    - fun fact
+    - fun fact please
+    - i want a fun fact
+    - give me a fun fact
+    - can you share a fun fact
+    - i'd like to hear a fun fact
+    - do you know any fun facts
+    - can you tell any fun facts
+    - share a fun fact with me
+    - what's a fun fact you know
+    - fun fact about space stations
+    - give me fun facts about space stations
+    - what is a fun fact about space stations
+    - space station fun fact
+    - do you know space station fun facts
+    - space fun fact
+    - tell me a fun fact please
+
+# training (to-do)
 - intent: skills
+  examples: |
+    - what skills do astronauts need
+    - what skills do you need on space stations
+    - what qualifications are required to be an astronaut
+    - what does it take to be an astronaut
+    - what abilities are essential for astronauts
+    - what kind of training is necessary for astronauts
+    - how can you train to be an astronaut
+    - how can i train to become an astronaut
+    - what technical skills do astronauts need
+    - what do astronauts need to know
+    - what knowledge does it need to be an astronaut
+    - what experience do astronaut need
+    - what skills are crucial for life on a space station
+    - what personal qualities should an astronaut have
+    - skills of astronauts
+    - required skills and knowledge to become an astronaut
+    - knowledge needed on space stations
+    - crucial skills for astronauts
+    - crucial skills on space stations
 
 - intent: preparation
+  examples: |
+    - how can I prepare for my life on a space station
+    - how do I get ready for living in space
+    - what should I do prepare for a mission to the ISS
+    - how do astronauts prepare
+    - how do astronauts train
+    - what preparations are needed for space travel
+    - how do astronauts prepare for their missions
+    - what steps are involved in getting ready for space
+    - how do you prepare for life on the ISS
+    - preparation for living in space
+    - what kind of preparation is needed for space station life
+    - how can one get ready for an extended stay in space
+    - what should I do to get ready for living on a space station
+    - what training do astronauts do
+    - how do astronauts train
+    - how does the training look like
+    - explain the required training for astronauts to me
+    - training for astronauts
+    - getting ready for living in space
 
 - intent: training_duration
+  examples: |
+    - how fast can you become an astronaut
+    - how many months do you need to become an astronaut
+    - how many years do you need to become an astronaut
+    - how many months do astronauts prepare
+    - how many months do astronauts train
+    - how many years do astronauts prepare
+    - how many years do astronauts train
+    - how long does astronaut training take
+    - how long does it take to become an astronaut
+    - what is the duration of astronaut training
+    - how much time is needed to train as an astronaut
+    - how many years does it take to become an astronaut
+    - what is the length of training for astronauts
+    - how long do astronauts train before going to space
+    - what is the timeline for astronaut training
+    - how long is the preparation for a space mission
+    - what is the total duration of training for astronauts
+    - how many months or years does it take to complete astronaut training
+    - how long is astronaut training
 
-# purpose of space stations and space traveling
+- intent: get_started
+  examples: |
+    - how can I get start my training for my journey to a space station
+    - how do I become an astronaut
+    - how do I get on a space station
+    - how can I begin my career as an astronaut
+    - how do I begin my career as an astronaut
+    - how can I start my journey to become an astronaut
+    - how do I start training for a space mission
+    - how can I pursue a career as an astronaut
+    - what steps are required to become an astronaut
+    - what should I do to become an astronaut
+    - what steps does it take to become an astronaut
+    - what steps should I take to become an astronaut
+    - what is the first step to becoming an astronaut
+    - I want to become an astronaut
+    - I want to be hired by NASA
+    - I want to be hired by SpaceX
+    - I want to get into a space station
+    - I want to go to space
+    - I want to be part of a space station team
+
+# purpose of space stations and space traveling (to-do)
 - intent: space_station_purpose
 
 - intent: space_station_goals
 
 - intent: space_station_and_science
 
-# about space stations
+# about space stations + history (to-do)
 - intent: space_station_stations
 
 - intent: space_station_planned
 
 - intent: space_station_nations
 
-# experiments and research
+# experiments and research (to-do)
 - intent: experiment_kinds
 
 - intent: experiment_benefits_for_earth
 
 - intent: experiment_most_relevant
 
-# challenges and psychological effects 
+# challenges and psychological effects (to-do)
 - intent: challenges
 
 - intent: isolation

@@ -1,3 +1,114 @@
 version: "3.1"
 
 stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: happy
+  - action: utter_great
+  - intent: ask_mood
+  - action: utter_mood
+
+- story: sad path with joke
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: unhappy
+  - action: utter_worried
+  - intent: affirm
+  - action: utter_joke
+  - intent: ask_mood
+  - action: utter_mood
+
+- story: joke
+  steps:
+  - intent: ask_for_joke
+  - action: utter_joke
+  - intent: ask_mood
+  - action: utter_mood
+
+- story: faq
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: ask_faq
+  - action: utter_faq
+  - intent: ask_capabilities
+  - action: utter_capabilities
+
+- story: report bug
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: report_bug
+  - action: utter_bug_reported
+  - intent: feedback
+  - action: utter_feedback_received
+
+- story: guide
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: ask_recommendations
+  - action: utter_give_guide
+
+- story: contact_info
+  steps:
+  - intent: ask_contact_info
+  - action: utter_contact
+  - intent: feedback
+  - action: utter_feedback_received
+
+- story: good feedback
+  steps:
+  - intent: your_good
+  - action: utter_good_feedback
+  - intent: feedback
+  - action: utter_feedback_received
+
+- story: bad feedback
+  steps:
+  - intent: ask_real_time
+  - action: utter_no_real_time
+  - intent: your_bad
+  - action: utter_bad_feedback
+  - intent: feedback
+  - action: utter_feedback_received
+
+- story: real time capabilities
+  steps:
+  - intent: ask_real_time
+  - action: utter_no_real_time
+  - intent: ask_capabilities
+  - action: utter_capabilities
+
+- story: questions 1
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_purpose
+  - action: utter_purpose
+
+- story: questions 2
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_purpose
+  - action: utter_purpose
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_creator
+  - action: utter_creator
+
+- story: questions 3
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_purpose
+  - action: utter_purpose
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_technology
+  - action: utter_technology

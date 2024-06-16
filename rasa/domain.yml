@@ -22,7 +22,7 @@ intents:
   - ask_technology
   - ask_real_time
   - ask_mood
-  - ask_joke
+  - ask_for_joke
   - ask_help
   - ask_faq
   - report_bug
@@ -33,16 +33,77 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hello and welcome aboard! I am Spacemate, your dedicated guide to share insights about the wonders of space stations. How can I assist you today?"
+  - text: "Hello and welcome aboard! How can I assist you today?"
+  #I am Spacemate, your dedicated guide to share insights about the wonders of space stations."
 
   utter_goodbye:
   - text: "Farewell! It was a pleasure assisting you. Safe travels through the cosmos!"
 
+  utter_great:
+  - text: "That's awesome! That makes me happy to hear!"
+
+  utter_mood:
+  - text: "I am very well, thank's for asking! But it might not be in the traditional way, as a human might experience it, hehe."
+
+  utter_worried:
+  - text: "Oh, I'm sorry to hear that. Mabye a joke might cheer you up?"
+
+  utter_joke:
+  - text: "Bündnis 90 Die Grünen"
+
+  utter_help:
+  - text: "FAQ, capabilities, bug, guide or feedback?"
+
+  utter_faq:
+  - text: "Sure, but the faq needs to be done!"
+
+  utter_capabilities:
+  - text: "I am capable of holding basic conversations and can give you detailed information about space stations. Additionally I can give you information about me, my creation, my creator and have a feedback feature, which you are free to use to improve the quality of this chatbot!"
+
+  utter_bug_reported:
+  - text: "Oh, that's too bad. I can not react to individual bugs, but you can share more information about it with my feedback feature!"
+
+  utter_feedback_received:
+  - text: "That feature is missing at the moment, but it will be added in the future! Thanks for trying to improve this chatbot!"
+  
+  utter_give_guide:
+  - text: "GUIDE"
+
+  utter_contact:
+  - text: "You contact the creator and maintainer of this chatbot through this email-address: Dominic_Daniel.Kraemer@Student.Reutlingen-University.de"
+
+  utter_good_feedback:
+  - text: "That makes me really happy to hear! Thanks! If you want to give a detailed feedback, you are free to use my feedback feature!"
+
+  utter_no_real_time:
+  - text: "I can't process real-time information!"
+
+  utter_bad_feedback:
+  - text: "Oh, I'm sorry for not fullfilling your expectations. If want to like to share your experience you can always use my feedback feature."
+
+  utter_name:
+  - text: "I am Spacemate, your AI-powered chatbot. That's the name my lovely creator gave me."
+
   utter_what_i_am:
-  - text: "I am Spacemate, an AI-powered chatbot, designed to be your guide and assistant in exploring all things space stations. I provide information, fun facts, and much more!"
+  - text: "I am the best Chatbot ever!"
+
+  utter_purpose:
+  - text: "I am Spacemate, an AI-powered chatbot, designed to be your guide and assistant in exploring all things space stations. I provide information, fun facts, and much more! I can even tell you a joke if you want to!"
+
+  utter_creation:
+  - text: "I was created for a university project. More details will be added in the future!"
+
+  utter_creator:
+  - text: "My creator is Dominic Krämer, a student of Reutlingen University. Hope that helps!"
+
+  utter_technology:
+  - text: "I was build using Python with the Rasa framework. The source code is publicly available at: gitlab.reutlingen-university.de. Hope that answers your question!"
 
   utter_easter_egg:
   - text: "General Kenobi! You are a bold one."
+
+  utter_respectful_conversation:
+  - text: "Please refrain from using this language! I'm keeping this converstaion respectful and expect the same from you!"
 
 session_config:
   session_expiration_time: 60

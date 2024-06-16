@@ -75,6 +75,7 @@ nlu:
     - that sounds good
     - without a dobut
     - you got it
+    - yes please
 
 - intent: thank_you
   examples: |
@@ -405,6 +406,7 @@ nlu:
 
 - intent: ask_creation
   examples: |
+    - tell me about your creation
     - how were you created
     - can you explain me your creation
     - can you explain me how you were created
@@ -518,7 +520,7 @@ nlu:
     - what mood are you in today
     - how do you feel about today
 
-- intent: ask_joke
+- intent: ask_for_joke
   examples: |
     - jokes please
     - can you tell me a joke

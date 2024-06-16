@@ -2,11 +2,6 @@ version: "3.1"
 
 rules:
 
-- rule: Greet the user
-  steps:
-  - intent: greet
-  - action: utter_greet
-
 - rule: Say goodbye to the user
   steps:
   - intent: goodbye
@@ -17,7 +12,7 @@ rules:
   - intent: hello_there
   - action: utter_easter_egg
 
-- rule: Explain what you are
+- rule: Demand a respectful tone during conversations
   steps:
-  - intent: what_are_you
-  - action: utter_what_i_am
+  - intent: insult
+  - action: utter_respectful_conversation

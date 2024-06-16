@@ -107,7 +107,7 @@ nlu:
     - space fun fact
     - tell me a fun fact please
 
-# training (to-do)
+# training
 - intent: skills
   examples: |
     - what skills do astronauts need
@@ -198,17 +198,136 @@ nlu:
 
 # purpose of space stations and space traveling (to-do)
 - intent: space_station_purpose
+  examples: |
+    - what is the purpose of space stations
+    - what is the purpose of space missions
+    - what is the purpose of space traveling
+    - what is the purpose of a space station
+    - why do we have space stations
+    - do we need space stations
+    - are space stations necessary
+    - are space stations worth it
+    - what are space stations used for
+    - what is the main purpose of the ISS
+    - why are space stations built
+    - what is the function of a space station
+    - what role do space stations play in space exploration
+    - why are space stations important
+    - what are the objectives of space stations
+    - what is the purpose of the ISS
+    - why do we build space stations
+    - are space stations important
+    - how important are space stations
+    - is space travel necessary
+    - how relevant is space traveling
+    - how can those space experiments be justified
+    - justify the existance of space stations
+    - justify the purpose of space stations
 
 - intent: space_station_goals
+  examples: |
+    - what are the goals of space stations
+    - what are the goals of space traveling
+    - goals of the ISS
+    - goals of the space station
+    - what objectives does the ISS aim to achieve
+    - what are the main goals of a space station
+    - what are the targets of a space station
+    - what are the targets of the ISS
+    - what does the space stations aim to accomplish
+    - what are the long-term goals of the ISS
+    - what is the mission of space stations
+    - missions of a space station
+    - what should space stations achieve
+    - what is the main objective of space stations
+    - explain the goals of space stations to me
+    - what do space stations achieve
 
 - intent: space_station_and_science
+  examples: |
+    - what benefits do space station deliver to science
+    - how does science benefit from space stations
+    - can science benefit from space stations
+    - are space stations relevant to modern science
+    - relation between space stations and science
+    - how does the space station contribute to science
+    - what scientific research is conducted on the ISS
+    - what is the role of the space station in scientific discoveries
+    - how do space stations help in scientific experiments
+    - what kind of science is done on the ISS
+    - how do astronauts conduct science on the space station
+    - what are some scientific breakthroughs from the ISS
+    - what scientific benefits do space stations deliver
+    - what scientific projects are carried out on space stations
+    - how does the space station support scientific advancements
+    - what scientific studius are performed on the space station
 
 # about space stations + history (to-do)
 - intent: space_station_stations
+  examples: |
+    - what space stations are there
+    - what type of space stations are there
+    - how many space stations exist
+    - list me all space stations
+    - give me a list of all space stations
+    - list me every space station
+    - give me all space stations
+    - tell me which space stations exist
+    - how many space stations are there
+    - what are the different space stations
+    - can you list all the different space stations
+    - can you list all the space stations
+    - what space stations are currently operational
+    - what are the names of the space stations
+    - how many space stations have been built
+    - what space stations are in orbit
+    - can you tell me about the existing space stations
+    - how many space stations are currently existing
+    - how many space stations exist doay
+    - what are the active space stations
 
 - intent: space_station_planned
+  examples: |
+    - which space stations are planned
+    - which space stations will be built in the future
+    - which space stations are currently build
+    - what space stations will be build in the next years
+    - what space stations are planned for the future
+    - are there any new space stations being developed
+    - what are the upcoming space station programs
+    - are there plans for new space stations
+    - will there be new space stations in the future
+    - what space stations are being built
+    - what future space stations are in the works
+    - are there any plans for additional space stations
+    - what new space stations are being planned
+    - what future projects involve space stations
+    - can you tell me something about planned space stations
+    - how many space stations will there be in the future
+    - tell me about the future plans of space stations
+    - tell me about the future of space station programs
 
 - intent: space_station_nations
+  examples: |
+    - which nations do own space stations
+    - who owns those space nations
+    - who is leading in owning and maintaining space stations
+    - who maintains space stations
+    - who owns the ISS
+    - which nations have space stations
+    - what countries operate space stations
+    - can you list the nations with space stations
+    - list me the nations with space stations
+    - which countries have their own space stations
+    - what nations are involved in space station programs
+    - what nations are part of the space station race
+    - which countries participate in the ISS
+    - what nations contribute to space station missions
+    - which countries have built space stations
+    - what nations have planned space stations
+    - what nations have plans for space stations
+    - which countries are part of space station collaborations
+    - which countries collaborate in space station programs
 
 # experiments and research (to-do)
 - intent: experiment_kinds

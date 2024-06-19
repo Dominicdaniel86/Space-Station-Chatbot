@@ -2,17 +2,32 @@ version: "3.1"
 
 rules:
 
-- rule: Say goodbye to the user
+- rule: respond to a thankful user
+  steps:
+  - intent: thank_you
+  - action: utter_your_welcome
+  
+- rule: say goodbye to the user
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Easter Egg
+- rule: demand a respectful tone during conversations
+  steps:
+  - intent: insult
+  - action: utter_respectful_conversation
+
+- rule: easter egg
   steps:
   - intent: hello_there
   - action: utter_easter_egg
 
-- rule: Demand a respectful tone during conversations
+- rule: joke
   steps:
-  - intent: insult
-  - action: utter_respectful_conversation
+  - intent: ask_for_joke
+  - action: utter_joke
+
+- rule: entrypoint 1
+  steps:
+  - intent: ask_what_else
+  - action: utter_entry_point

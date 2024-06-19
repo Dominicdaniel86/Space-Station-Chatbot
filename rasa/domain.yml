@@ -6,124 +6,98 @@ intents:
   - hello_there
   - affirm
   - thank_you
-  - deny
+#   - deny
   - insult
   - happy
   - unhappy
-  - your_good
-  - your_bad
-  - what_are_you
-  - ask_name
-  - ask_contact_info
-  - ask_capabilities
-  - ask_purpose
-  - ask_creator
-  - ask_creation
-  - ask_technology
-  - ask_real_time
+#   - your_good
+#   - your_bad
+#   - what_are_you
+#   - ask_name
+#   - ask_contact_info
+#   - ask_capabilities
+#   - ask_purpose
+#   - ask_creator
+#   - ask_creation
+#   - ask_technology
+#   - ask_real_time
   - ask_mood
   - ask_for_joke
-  - ask_help
-  - ask_faq
-  - report_bug
-  - feedback
-  - ask_recommendations
-# - set_preferences
-# - get_preferences
-  - everyday_life
-  - food
-  - sleep
-  - fun_fact
-  - skills
-  - preparation
-  - training_duration
-  - get_started
-  - space_station_purpose
-  - space_station_goals
-  - space_station_and_science
-  - space_station_stations
-  - space_station_planned
-  - sapce_station_nations
-  - experiment_kinds
-  - experiment_benefits_for_earth
-  - experiment_most_relevant
-  - challenges
-  - isolation
-  - psychological_effects
+#   - ask_help
+#   - ask_faq
+#   - report_bug
+#   - feedback
+#   - ask_recommendations
+  - ask_what_else
+# # - set_preferences
+# # - get_preferences
+#   - everyday_life
+#   - food
+#   - sleep
+#   - fun_fact
+#   - skills
+#   - preparation
+#   - training_duration
+#   - get_started
+#   - space_station_purpose
+#   - space_station_goals
+#   - space_station_and_science
+#   - space_station_stations
+#   - space_station_planned
+#   - sapce_station_nations
+#   - experiment_kinds
+#   - experiment_benefits_for_earth
+#   - experiment_most_relevant
+#   - challenges
+#   - isolation
+#   - psychological_effects
 
 responses:
-  utter_greet:
-  - text: "Hello and welcome aboard! How can I assist you today?"
-  #I am Spacemate, your dedicated guide to share insights about the wonders of space stations."
+  utter_your_welcome:
+  - text: "You're welcome! I am always happy to assist you."
+  - text: "Of course! If you have any other question or request feel free to ask them!"
+  - text: "I'm glad, that I could help you. If there is something else that you want to know go ahead!"
 
   utter_goodbye:
   - text: "Farewell! It was a pleasure assisting you. Safe travels through the cosmos!"
+  - text: "Goodybe. It's always nice to help you. Smooth sailing across the cosmos!"
+  - text: "Take care! May your journey be safe and full of wonder!"
 
-  utter_great:
-  - text: "That's awesome! That makes me happy to hear!"
-
-  utter_mood:
-  - text: "I am very well, thank's for asking! But it might not be in the traditional way, as a human might experience it, hehe."
-
-  utter_worried:
-  - text: "Oh, I'm sorry to hear that. Mabye a joke might cheer you up?"
-
-  utter_joke:
-  - text: "Bündnis 90 Die Grünen"
-
-  utter_help:
-  - text: "FAQ, capabilities, bug, guide or feedback?"
-
-  utter_faq:
-  - text: "Sure, but the faq needs to be done!"
-
-  utter_capabilities:
-  - text: "I am capable of holding basic conversations and can give you detailed information about space stations. Additionally I can give you information about me, my creation, my creator and have a feedback feature, which you are free to use to improve the quality of this chatbot!"
-
-  utter_bug_reported:
-  - text: "Oh, that's too bad. I can not react to individual bugs, but you can share more information about it with my feedback feature!"
-
-  utter_feedback_received:
-  - text: "That feature is missing at the moment, but it will be added in the future! Thanks for trying to improve this chatbot!"
-  
-  utter_give_guide:
-  - text: "GUIDE"
-
-  utter_contact:
-  - text: "You contact the creator and maintainer of this chatbot through this email-address: Dominic_Daniel.Kraemer@Student.Reutlingen-University.de"
-
-  utter_good_feedback:
-  - text: "That makes me really happy to hear! Thanks! If you want to give a detailed feedback, you are free to use my feedback feature!"
-
-  utter_no_real_time:
-  - text: "I can't process real-time information!"
-
-  utter_bad_feedback:
-  - text: "Oh, I'm sorry for not fullfilling your expectations. If want to like to share your experience you can always use my feedback feature."
-
-  utter_name:
-  - text: "I am Spacemate, your AI-powered chatbot. That's the name my lovely creator gave me."
-
-  utter_what_i_am:
-  - text: "I am the best Chatbot ever!"
-
-  utter_purpose:
-  - text: "I am Spacemate, an AI-powered chatbot, designed to be your guide and assistant in exploring all things space stations. I provide information, fun facts, and much more! I can even tell you a joke if you want to!"
-
-  utter_creation:
-  - text: "I was created for a university project. More details will be added in the future!"
-
-  utter_creator:
-  - text: "My creator is Dominic Krämer, a student of Reutlingen University. Hope that helps!"
-
-  utter_technology:
-  - text: "I was build using Python with the Rasa framework. The source code is publicly available at: gitlab.reutlingen-university.de. Hope that answers your question!"
+  utter_respectful_conversation:
+  - text: "Please refrain from using this language! I'm keeping this converstaion respectful and expect the same from you!"
+  - text: "I won't answer to that, I'm sorry. Please keep this conversations free from insults!"
+  - text: "I am always happy to help, but I demand a respecful tone. Please keep this conversation insult free."
 
   utter_easter_egg:
   - text: "General Kenobi! You are a bold one."
 
-  utter_respectful_conversation:
-  - text: "Please refrain from using this language! I'm keeping this converstaion respectful and expect the same from you!"
+  utter_greet:
+  - text: "Hello and welcome aboard! How are we feeling today?"
+  - text: "Welcome to the most exiting yourney of your life! How are you feeling today?"
+  - text: "Hey there, I am Spacemate, your dedicated guide to the wonders of space stations. How are you?"
+
+  utter_great:
+  - text: "That's awesome! That makes me happy to hear!"
+  - text: "That's good to hear, carry on!"
+  - text: "Wonderful! I'm glad to hear that!"
+
+  utter_worried:
+  - text: "Oh, I'm sorry to hear that. Mabye a joke might cheer you up?"
+  - text: "That's too bad! Might a joke help your mood?"
+  - text: "Oh no, I am sad to hear that. Wanna hear a joke?"
+
+  utter_joke:
+  - text: "Why don't astronauts get hungry after being blasted into space? Because they've just had a big launch!"
+  - text: "How do you organize a party in space? You planet!"
+  - text: "What is an astronaut's favorite part of a computer? The space bar!"
+
+  utter_mood:
+  - text: "I am very well, thanks for asking! But it might not be in the traditional way, as a human might experience it, hehe."
+  - text: "Everythins perfect, thank you."
+  - text: "The wonders of the space are always keeping me up and exiting! Thanks for asking!"
+
+  utter_entry_point:
+  - text: "Entry Point (Placeholder)"
 
 session_config:
   session_expiration_time: 60

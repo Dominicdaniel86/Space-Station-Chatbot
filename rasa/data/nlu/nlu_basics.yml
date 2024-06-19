@@ -191,6 +191,7 @@ nlu:
     - i'm ok
     - i feel ok
     - i feel alright
+    - pretty good and you
 
 - intent: unhappy
   examples: |
@@ -295,6 +296,7 @@ nlu:
     - how would you describe yourself
     - describe yourself
     - are you not real
+    - anything I need to know about you
 
 - intent: ask_name
   examples: |
@@ -581,6 +583,7 @@ nlu:
     - is there a faq
     - is there a faq section
     - give me the faq
+    - frequently asked questions
 
 - intent: report_bug
   examples: |

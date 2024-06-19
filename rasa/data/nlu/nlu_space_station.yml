@@ -24,6 +24,7 @@ nlu:
     - daily life in space
     - daily tasks in space
     - daily to-dos on ISS
+    - life on a space station
 
 - intent: food
   examples: |
@@ -173,6 +174,7 @@ nlu:
     - what is the total duration of training for astronauts
     - how many months or years does it take to complete astronaut training
     - how long is astronaut training
+    - so how long does the selection process take
 
 - intent: get_started
   examples: |

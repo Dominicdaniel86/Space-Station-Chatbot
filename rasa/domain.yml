@@ -6,51 +6,52 @@ intents:
   - hello_there
   - affirm
   - thank_you
-#   - deny
+  - deny
   - insult
   - happy
   - unhappy
-#   - your_good
-#   - your_bad
-#   - what_are_you
-#   - ask_name
-#   - ask_contact_info
-#   - ask_capabilities
-#   - ask_purpose
-#   - ask_creator
-#   - ask_creation
-#   - ask_technology
-#   - ask_real_time
+  - youre_good
+  - youre_bad
+  - what_are_you
+  - ask_name
+  - ask_contact_info
+  - ask_capabilities
+  - ask_purpose
+  - ask_creator
+  - ask_creation
+  - ask_technology
+  - ask_real_time
   - ask_mood
   - ask_for_joke
-#   - ask_help
-#   - ask_faq
-#   - report_bug
-#   - feedback
-#   - ask_recommendations
+  - ask_help
+  - ask_faq
+  - report_bug
+  - feedback
+  - ask_recommendations
   - ask_what_else
-# # - set_preferences
-# # - get_preferences
-#   - everyday_life
-#   - food
-#   - sleep
-#   - fun_fact
-#   - skills
-#   - preparation
-#   - training_duration
-#   - get_started
-#   - space_station_purpose
-#   - space_station_goals
-#   - space_station_and_science
-#   - space_station_stations
-#   - space_station_planned
-#   - sapce_station_nations
-#   - experiment_kinds
-#   - experiment_benefits_for_earth
-#   - experiment_most_relevant
-#   - challenges
-#   - isolation
-#   - psychological_effects
+  - ask_topics
+  # - set_preferences
+  # - get_preferences
+  - everyday_life
+  - food
+  - sleep
+  - fun_fact
+  - skills
+  - preparation
+  - training_duration
+  - get_started
+  - space_station_purpose
+  - space_station_goals
+  - space_station_and_science
+  - space_station_stations
+  - space_station_planned
+  - space_station_nations
+  - experiment_kinds
+  - experiment_benefits_for_earth
+  - experiment_most_relevant
+  - challenges
+  - isolation
+  - psychological_effects
 
 responses:
   utter_your_welcome:
@@ -96,8 +97,198 @@ responses:
   - text: "Everythins perfect, thank you."
   - text: "The wonders of the space are always keeping me up and exiting! Thanks for asking!"
 
+  utter_no_real_time:
+  - text: "Sorry, I am not able to process real time information like that."
+  - text: "I'm sorry, but I can't answer questions regarding location and time."
+  - text: "Sadly I can't process real time data."
+
+  utter_good_feedback:
+  - text: "Glad to hear! Do you want to use my feedback feature to improve my work?"
+  - text: "That makes me really happy to hear! Thanks! If you want to give a detailed feedback, you are free to use my feedback feature!"
+  - text: "Thank you for the positive feedback! Your input can help me to improve. Would you like to use my feedback feature to do so?"
+
+  utter_bad_feedback:
+  - text: "Oh, I'm sorry for not fullfilling your expectations. If want to like to share your experience you can always use my feedback feature."
+  - text: "I apologize for the inconvenience. Your feedback is valuable, and I'd appreciate it if you could provide more details using my feedback feature."
+  - text: "I'm sorry to hear that. You feedback is important to me, and I'd like to understand how I can improve. Would you like to use my feedback feature?"
+
+  utter_denied:
+  - text: "Oh sorry. If you are sure, that somethings wrong or not completely right, you are always free to use my feedback feature!"
+  - text: "Oh no, sorry for that. I always thrive to give the best responses. If somethings wrong, please regard using my feedback feature to improve my quality!"
+  - text: "That's too bad. If you think somethings not true or not right, you can always use my feedback feature to correct my answers!"
+
+  utter_faq:
+  - text: "Q: What are you?\n
+           A: I am Spacemate, a Rasa-powered chatbot.\n
+           Q: What can you do?\n
+           A: I can hold a basic conversation, tell many things about space stations (some even in real time!) and tell jokes and fun facts!\n
+           Q: What topics can you provide knowledge to?\n
+           A: I can tell you about the everyday life of astronauts, how you can become one, how many space stations there are and what their purpose is.\n
+           I hope that answers some of your questions!"
+
+  utter_help:
+  - text: "How can I help you? I can prove some recommendations how to start, help you with reporting bugs or provide a FAQ."
+  - text: "Sure thing, what is the problem? Do you want to see my capabilities, report a bug, give feedback or look at a FAQ?"
+
+  utter_bug_reported:
+  - text: "Oh, that's too bad. I can not react to individual bugs, but you can share more information about it with my feedback feature!"
+  - text: "Sorry to hear that. Do you want to use my feedback feature to report the bug?"
+  - text: "That's too bad. While I can't react to your individual bug, I would appreciate if you would use my feedback feature to improve me."
+
+  utter_contact:
+  - text: "You contact the creator and maintainer of this chatbot through this email-address: Dominic_Daniel.Kraemer@Student.Reutlingen-University.de"
+  - text: "You can either you use my feedback feature or directly contact my creator via Dominic_Daniel.Kraemer@Student.Reutlingen-University.de"
+
+  utter_feedback:
+  - text: "Sure thing. You can click the 'Feedback' button in the upper right corner. Your entered feedback will automatically be stored and reviewed by my developer."
+  - text: "Thanks for your willingness to improve my Quality. Using the 'Feedback' button in the upper right corner you can input your feedback, which will used by my developer to improve me."
+  - text: "Happy to hear that. You can user the 'Feedback' button in the upper right corner. Your feedback will then be used to adjust my data input. Thanks in advance!"
+
   utter_entry_point:
-  - text: "Entry Point (Placeholder)"
+  - text: "I can tell you many things about space stations:\n
+          - fun facts\n
+          - how to become an astronaut\n
+          - the needed skills\n
+          - what challenges astronauts fear\n
+          - why we even have space stations\n
+          - ... and much more"
+  # - text: "Entry Point (Placeholder)"
+  # - text: "Entry Point (Placeholder)"
+
+  utter_name:
+  - text: "I am Spacemate, your AI-powered chatbot. That's the name my lovely creator gave me."
+  - text: "My name is Spacemate, a Rasa-powered chatbot. I am here to assist and help you!"
+  - text: "Hey there, you can call me Spacemate. Nice to meet you!"
+
+  utter_what_i_am:
+  - text: "I am Spacemate, your dedicated guide to share insights about the wonders of space stations."
+  - text: "I am Spacemate, an AI-powered chatbot, that wants to ignite the fascination about space traveling in you!"
+  - text: "I am Spacemate, your friendly chatbot, that will help you with all your questions about the wonders of space stations and space traveling!"
+
+  utter_creation:
+  - text: "I was created in multiple steps.\n
+          1. All user interactions were integrated with a lot of data.\n
+          Then my system was tested and improved through multiple tests and samples of actual user input.\n
+          At the very last some additonal logic was implemented like calling the Nasa real time data and enable custom user configuration."
+
+  utter_creator:
+  - text: "My creator is Dominic Krämer, a student of Reutlingen University. Hope that helps!"
+  - text: "I was build my Dominic Krämer, a student of Reutlingen University. Hope that helps!"
+
+  utter_technology:
+  - text: "I was build using Python with the Rasa framework and flask. The source code is publicly available at: gitlab.reutlingen-university.de. Hope that answers your question!"
+
+  utter_capabilities:
+  - text: "I am capable of holding basic conversations and can give you detailed information about space stations. Additionally I can give you information about me, my creation, my creator and have a feedback feature, which you are free to use to improve the quality of this chatbot!"
+
+  utter_purpose:
+  - text: "I am Spacemate, an AI-powered chatbot, designed to be your guide and assistant in exploring all things space stations. I provide information, fun facts, and much more! I can even tell you a joke if you want to!"
+  - text: "My purpose is to answer all your space station related questions. I want to give you the best impression about the daily life, challenges and tasks of astronauts."
+  - text: "I am here to help you understand all things related to space stations. Ranging from general information about space stations to the life and tasks of astronauts."
+
+  #######################################################
+  #######################################################
+  #######################################################
+
+  utter_fun_fact:
+  - text: "Did you know that the International Space Station (ISS) orbits Earth at a speed of about 28,000 kilometers per hour? That's fast enough to circle the planet in roughly 90 minutes!"
+  - text: "The ISS is a collaboration of 15 nations and has been continuously occupied since November 2000, making it one of humanity's most enduring achievements in space."
+  - text: "Space stations like the ISS experience 16 sunrises and sunsets every day due to their high orbital speed."
+
+  utter_everyday_life:
+  - text: "Everyday life on a space station involves a mix of scientific experiments, exercise, maintenance work, and personal time. Astronauts follow a structured schedule to ensure they complete all necessary tasks."
+  - text: "Astronauts work about 10 hours a day on weekdays and 5 hours on Saturdays. They spend their time conducting experiments, maintaining the station, and communicating with mission control."
+  - text: "Free time can be spent looking out of the window at Earth, reading, watching movies, or even playing musical instruments."
+
+  utter_food:
+  - text: "Astronauts eat a variety of pre-packaged and vacuum-sealed meals. Foods like fruits, nuts, peanut butter, chicken, beef, seafood, candy, and brownies are commonly consumed."
+  - text: "Meals need to be nutritious and easy to prepare. They are often dehydrated and rehydrated with water before consumption."
+  - text: "Special care is taken to provide balanced meals to maintain astronauts' health and energy levels in the microgravity environment."
+
+  utter_sleep:
+  - text: "Astronauts sleep in small individual cabins with sleeping bags attached to the wall to prevent them from floating around."
+  - text: "They follow a regular 24-hour cycle of 16 hours of work and 8 hours of sleep to maintain a consistent sleep schedule."
+  - text: "The lack of gravity can affect sleep quality, so astronauts use sleep masks and earplugs to block out light and noise."
+
+  utter_starting_point:
+  - text: "Becoming an astronaut typically requires a degree in engineering, biological science, physical science, computer science, or mathematics. Advanced degrees and relevant experience are highly beneficial."
+  - text: "Candidates must pass a rigorous selection process, which includes physical exams, psychological tests, and interviews."
+  - text: "Once selected, astronaut candidates undergo extensive training, which includes simulations, physical fitness training, and learning how to operate spacecraft systems."
+
+  utter_skills:
+  - text: "Astronauts need a variety of skills, including technical proficiency in science or engineering, physical fitness, and the ability to work well in a team."
+  - text: "Problem-solving skills and the ability to remain calm under pressure are crucial for dealing with unexpected situations in space."
+  - text: "Effective communication skills are essential for coordinating with mission control and other crew members."
+
+  utter_astronaut_challenges:
+  - text: "Astronauts face several challenges, such as adapting to microgravity, which affects muscle and bone density."
+  - text: "Isolation and confinement can impact mental health, requiring strong psychological resilience."
+  - text: "Radiation exposure in space is higher than on Earth, posing long-term health risks."
+
+  utter_isolation:
+  - text: "Isolation can lead to feelings of loneliness and depression. Astronauts combat this by maintaining regular communication with family and friends."
+  - text: "Structured routines and engaging in recreational activities help manage the psychological effects of isolation."
+  - text: "Team-building exercises before the mission help ensure crew members can support each other emotionally."
+
+  utter_psychology:
+  - text: "Living on a space station can lead to psychological stress due to isolation, confinement, and the high-risk environment."
+  - text: "Astronauts undergo psychological training to develop coping mechanisms and resilience."
+  - text: "Regular mental health check-ins and support from psychologists on Earth help manage stress levels."
+
+  utter_training_duration:
+  - text: "Astronaut training can last from two to three years before they are qualified for a mission."
+  - text: "Training includes physical conditioning, learning spacecraft systems, and survival training for emergency situations."
+  - text: "Ongoing training and simulations continue throughout an astronaut's career to keep their skills sharp."
+
+  utter_preparation:
+  - text: "Preparation for a mission involves extensive training on spacecraft operations, spacewalks, and emergency procedures."
+  - text: "Astronauts also learn to conduct scientific experiments and use the equipment they will have on the space station."
+  - text: "Physical conditioning and team-building exercises are also critical parts of mission preparation."
+
+  utter_space_station_purpose:
+  - text: "Space stations serve as platforms for scientific research in microgravity, which cannot be replicated on Earth."
+  - text: "They enable long-duration human spaceflight, providing insights into how the human body adapts to space."
+  - text: "Space stations serve as testbeds for new space technologies and exploration methods."
+
+  utter_goals:
+  - text: "The primary goals of space stations include advancing scientific knowledge, developing new technologies, and preparing for future human exploration of the solar system."
+  - text: "They aim to study the effects of long-term spaceflight on the human body to ensure the health and safety of astronauts on future missions."
+  - text: "Space stations foster international cooperation in space exploration."
+
+  utter_benefits:
+  - text: "Research conducted on space stations leads to advancements in medicine, materials science, and environmental science."
+  - text: "Space station experiments have contributed to improvements in disease treatments, water purification technologies, and understanding climate change."
+  - text: "The international collaboration on space stations promotes peaceful relations and shared knowledge among nations."
+
+  utter_science:
+  - text: "Space stations are vital for scientific research in a microgravity environment, allowing experiments that are impossible on Earth."
+  - text: "They provide unique conditions for studying fluid dynamics, combustion, biological processes, and fundamental physics."
+  - text: "Space stations support Earth observation and space weather research, contributing to our understanding of the planet and the space environment."
+
+  utter_experiment_kinds:
+  - text: "Experiments on space stations range from biological and medical research to physical sciences and technology development."
+  - text: "Biological experiments study the effects of microgravity on cells, plants, and animals, providing insights into fundamental biological processes."
+  - text: "Physical science experiments include fluid dynamics, combustion, and material science research to improve technologies on Earth."
+
+  utter_most_relevant:
+  - text: "One of the most impactful experiments conducted on the ISS is the study of protein crystal growth, which has implications for drug development and disease treatment."
+  - text: "Research on osteoporosis in space has led to better understanding and treatment of bone density loss on Earth."
+  - text: "The Alpha Magnetic Spectrometer (AMS) experiment on the ISS has provided valuable data on cosmic rays and dark matter."
+
+  utter_stations:
+  - text: "The most well-known space station is the International Space Station (ISS), a joint project involving NASA, Roscosmos, ESA, JAXA, and CSA."
+  - text: "China operates the Tiangong space station, which began construction in 2021 and aims to be fully operational by 2022."
+  - text: "The now-decommissioned Mir space station, operated by the Soviet Union and later Russia, was in orbit from 1986 to 2001."
+
+  utter_planned_stations:
+  - text: "Planned space stations include the Lunar Gateway, a NASA-led project to support missions to the Moon and beyond."
+  - text: "China plans to expand its Tiangong space station with additional modules and international collaboration."
+  - text: "Private companies like Axiom Space are developing commercial space stations to support research and tourism."
+
+  utter_station_nations:
+  - text: "Countries involved in space stations include the USA (NASA), Russia (Roscosmos), Europe (ESA), Japan (JAXA), and Canada (CSA) with the ISS."
+  - text: "China operates its own space station, Tiangong, independently."
+  - text: "Other countries, such as India and the United Arab Emirates, have expressed interest in developing their own space station capabilities in the future."
 
 session_config:
   session_expiration_time: 60

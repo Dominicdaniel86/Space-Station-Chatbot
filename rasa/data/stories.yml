@@ -24,3 +24,217 @@ stories:
   - action: utter_mood
   - intent: ask_what_else
   - action: utter_entry_point
+
+- story: good feedback
+  steps:
+  - intent: youre_good
+  - action: utter_good_feedback
+  - intent: affirm
+  - action: utter_feedback
+
+- story: bad feedback
+  steps:
+  - intent: ask_real_time
+  - action: utter_no_real_time
+  - intent: youre_bad
+  - action: utter_bad_feedback
+  - intent: affirm
+  - action: utter_feedback
+
+- story: denied
+  steps:
+  - intent: deny
+  - action: utter_denied
+  - intent: affirm
+  - action: utter_feedback
+
+- story: bug reported 1
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: report_bug
+  - action: utter_bug_reported
+  - intent: ask_contact_info
+  - action: utter_contact
+
+- story: bug reported 2
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: report_bug
+  - action: utter_bug_reported
+  - intent: feedback
+  - action: utter_feedback
+
+- story: faq
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: ask_faq
+  - action: utter_faq
+
+- story: ask name 1
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_creator
+  - action: utter_creator
+
+- story: ask name 2
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_technology
+  - action: utter_technology
+
+- story: ask name 3
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_capabilities
+  - action: utter_capabilities
+  - intent: ask_topics
+  - action: utter_entry_point
+
+- story: ask name 4
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_purpose
+  - action: utter_purpose
+  - intent: ask_topics
+  - action: utter_entry_point
+
+- story: what are you 1
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_creator
+  - action: utter_creator
+
+- story: what are you 2
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_technology
+  - action: utter_technology
+
+- story: what are you 3
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_capabilities
+  - action: utter_capabilities
+  - intent: ask_topics
+  - action: utter_entry_point
+
+- story: what are you 4
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_purpose
+  - action: utter_purpose
+  - intent: ask_topics
+  - action: utter_entry_point
+
+  #######################################################
+  #######################################################
+  #######################################################
+
+- story: everyday life 1
+  steps:
+  - intent: everyday_life
+  - action: utter_everyday_life
+  - intent: food
+  - action: utter_food
+
+- story: everyday life 2
+  steps:
+  - intent: everyday_life
+  - action: utter_everyday_life
+  - intent: sleep
+  - action: utter_sleep
+
+- story: get started 1
+  steps:
+  - intent: get_started
+  - action: utter_starting_point
+  - intent: skills
+  - action: utter_skills
+  - intent: challenges
+  - action: utter_astronaut_challenges
+
+- story: get started 2
+  steps:
+  - intent: get_started
+  - action: utter_starting_point
+  - intent: skills
+  - action: utter_skills
+  - intent: training_duration
+  - action: utter_training_duration
+  - intent: preparation
+  - action: utter_preparation
+  - intent: challenges
+  - action: utter_astronaut_challenges
+
+- story: challenges 1
+  steps:
+  - intent: challenges
+  - action: utter_astronaut_challenges
+  - intent: isolation
+  - action: utter_isolation
+
+- story: challenges 2
+  steps:
+  - intent: challenges
+  - action: utter_astronaut_challenges
+  - intent: psychological_effects
+  - action: utter_psychology
+
+- story: purpose 1
+  steps:
+  - intent: space_station_purpose
+  - action: utter_space_station_purpose
+  - intent: space_station_goals
+  - action: utter_goals
+  - intent: experiment_benefits_for_earth
+  - action: utter_benefits
+
+- story: purpose 2
+  steps:
+  - intent: space_station_purpose
+  - action: utter_space_station_purpose
+  - intent: space_station_and_science
+  - action: utter_science
+  - intent: experiment_kinds
+  - action: utter_experiment_kinds
+  - intent: experiment_benefits_for_earth
+  - action: utter_benefits
+
+- story: purpose 3
+  steps:
+  - intent: space_station_purpose
+  - action: utter_space_station_purpose
+  - intent: space_station_and_science
+  - action: utter_science
+  - intent: experiment_kinds
+  - action: utter_experiment_kinds
+  - intent: experiment_most_relevant
+  - action: utter_most_relevant
+
+- story: stations
+  steps:
+  - intent: space_station_stations
+  - action: utter_stations
+  - intent: space_station_planned
+  - action: utter_planned_stations
+  - intent: space_station_nations
+  - action: utter_station_nations

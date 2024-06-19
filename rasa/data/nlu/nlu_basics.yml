@@ -187,6 +187,10 @@ nlu:
     - so so perfect
     - so perfect
     - so far so good
+    - i feel alright
+    - i'm ok
+    - i feel ok
+    - i feel alright
 
 - intent: unhappy
   examples: |
@@ -218,7 +222,7 @@ nlu:
     - i am feeling down
     - life is unfair
 
-- intent: your_good
+- intent: youre_good
   examples: |
     - you are doing a great job
     - you are awesome
@@ -241,7 +245,7 @@ nlu:
     - you are so helpful
     - i appreciate your support
 
-- intent: your_bad
+- intent: youre_bad
   examples: |
     - you are doing a bad job
     - you are not helpful
@@ -453,7 +457,7 @@ nlu:
     - how does your technology work
     - what kind of algorithms are you based on
 
-# small talk
+# # small talk
 - intent: ask_real_time
   examples: |
     - what time is it
@@ -541,8 +545,9 @@ nlu:
     - make me laugh
     - make me smile
     - show me how funny you are
+    - i want a joke
 
-# explanation/ faq
+# # explanation/ faq
 - intent: ask_help
   examples: |
     - help me
@@ -632,6 +637,46 @@ nlu:
     - i need some suggestions
     - i need an advice what to ask
     - what are your topics
+
+- intent: ask_what_else
+  examples: |
+    - what else can you do
+    - what else can you answer
+    - what do you know
+    - what can you tell me
+    - what information do you have
+    - tell me what you know
+    - give me a list of topics that you know
+    - what are your areas of expertise
+    - what kind of information can you access
+    - can you list the types of questsions that you're equipped to handle
+    - what kind of questions can you answer
+    - what other questions can you answer
+    - what other conversations can you hold
+    - in which fields can you provide detailed information
+    - are there any subjects you are specialized in
+    - how can you assist me with my questions
+
+- intent: ask_topics
+  examples: |
+    - to which topics can you answer questions
+    - in which topics do you have knowledge
+    - to which topics can I ask you out
+    - What topics can I ask you about?
+    - Which areas are you knowledgeable in?
+    - What subjects can I ask questions on?
+    - In what topics do you have expertise?
+    - Can you tell me the topics you cover?
+    - What are the different topics you can help with?
+    - Can you provide a list of topics you can answer questions about?
+    - Which topics do you have information on?
+    - What areas can I ask you questions about?
+    - What subjects can you assist me with?
+    - Are there specific topics you can answer questions on?
+    - What topics are you able to provide answers for?
+    - Which topics are within your knowledge base?
+    - Can you list the topics I can ask questions on?
+    - What types of questions can you answer?
 
 # (settings/ preferences)
 # set_preferences

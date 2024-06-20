@@ -65,6 +65,13 @@ actions:
   - action_future_iss_location
 
 responses:
+  utter_could_not_understand:
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
+
+  #######################################################
+  #######################################################
+  #######################################################
+
   utter_your_welcome:
   - text: "You're welcome! I am always happy to assist you."
   - text: "Of course! If you have any other question or request feel free to ask them!"

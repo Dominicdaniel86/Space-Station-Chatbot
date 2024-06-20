@@ -297,6 +297,10 @@ nlu:
     - describe yourself
     - are you not real
     - anything I need to know about you
+    - what kind of AI are you
+    - are you programmed to chat
+    - what is a chatbot
+    - what kind of bot are you
 
 - intent: ask_name
   examples: |
@@ -316,6 +320,7 @@ nlu:
     - how do people address you
     - how do you want to be known
     - how do you want to be called
+    - how should I refer to you
 
 - intent: ask_contact_info
   examples: |
@@ -359,6 +364,7 @@ nlu:
     - what can you not do
     - what are your limits
     - what kind of functions can you fulfill
+    - what do you do
 
 - intent: ask_purpose
   examples: |

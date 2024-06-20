@@ -4,14 +4,33 @@
         <title>Space Station Chatbot</title>
         <meta charset="UTF-8">
         <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico">
+        <link rel="stylesheet" href="static/css/index.css">
     </head>
 
     <body>
-        <h1>Welcome to the Space Station Chatbot!</h1>
-        <div>
-            <input type="text" id="inputField" placeholder="Gib etwas ein">
-            <button onclick="sendMessage()">CLICK ME</button>
+        <!-- <h1 style="text-align: center;">Welcome to the Space Station Chatbot!</h1> -->
+        <img src="static/robo_images/dall-e-image-happy-cropped2.png" alt="Robo Image">
+        <div class="tipps">
+            <h2>Some smaller tipps to start:</h2>
+            <ul>
+                <li>say hi to the bot</li>
+                <li>ask the bot what it is</li>
+                <li>ask the bot for help or recommendations</li>
+            </ul>
         </div>
+        <div class="chat-container">
+            <div id="chat">
+            </div>
+            <div class="input">
+                <input type="text" id="inputField" placeholder="Talk to the chatbot..."  onkeypress="checkKeyInput(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <div class="feedback">
+            <button>Feedback</button>
+        </div>
+        
         <script src="static/javascript/frontend.js" type="application/javascript"></script>
     </body>
 </html>

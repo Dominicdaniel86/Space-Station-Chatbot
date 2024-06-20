@@ -1,0 +1,115 @@
+body {
+    background-image: url('../background/space-station.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+img {
+    width: 30%;
+    margin-top: 75px;
+    margin-left: 2.5%;
+}
+
+input {
+    margin-top: 2px;
+    width: 72.5%;
+    float: left;
+    height: 40px;
+    border-style: solid;
+    border-color: white;
+}
+
+button {
+    width: 25%;
+    float: right;
+    height: 50px;
+    border-style: solid;
+    border-color: white;
+}
+
+.chat-container {
+    margin-top: 75px;
+    margin-right: 22.5%;
+    width: 40%;
+    float:right;
+    text-align: center;
+    height: 750px;
+    /* border-style: solid;
+    border-color: white; */
+}
+
+#chat {
+    height: 680px;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    overflow-y:scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+#chat::-webkit-scrollbar {
+    display: none; /* Webkit-based browsers */
+}
+
+.input {
+    background-color: white;
+    height: 50px;
+    border-style: solid;
+    border-color:cornflowerblue;
+}
+
+.message-user {
+    background-color: white;
+    color: black;
+    /* width: 200px; */
+    align-self: flex-end;
+    float: right;
+    clear: both;
+    margin-top: 10px;
+    min-width: 10%;
+    max-width: 80%;
+    border-radius: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.message-bot {
+    background-color: gray;
+    color: black;
+    /* width: 200px; */
+    align-self: flex-start;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    min-width: 10%;
+    max-width: 80%;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.feedback {
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding-right: 150px;
+    width: 500px;
+    padding-top: 50px;
+}
+
+.tipps {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    text-align: center;
+    width: 20%;
+    font-size: large;
+    /* background-color: white;
+    color: black; */
+}

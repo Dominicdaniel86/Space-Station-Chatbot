@@ -1,0 +1,146 @@
+version: "3.1"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: happy
+  - action: utter_great
+  - intent: ask_mood
+  - action: utter_mood
+  - intent: ask_what_else
+  - action: utter_entry_point
+
+- story: sad path with joke
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: unhappy
+  - action: utter_worried
+  - intent: affirm
+  - action: utter_joke
+  - intent: ask_mood
+  - action: utter_mood
+  - intent: ask_what_else
+  - action: utter_entry_point
+
+- story: good feedback
+  steps:
+  - intent: youre_good
+  - action: utter_good_feedback
+  - intent: affirm
+  - action: utter_feedback
+
+- story: bad feedback
+  steps:
+  - intent: ask_real_time
+  - action: utter_no_real_time
+  - intent: youre_bad
+  - action: utter_bad_feedback
+  - intent: affirm
+  - action: utter_feedback
+
+- story: denied
+  steps:
+  - intent: deny
+  - action: utter_denied
+  - intent: affirm
+  - action: utter_feedback
+
+- story: bug reported 1
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: report_bug
+  - action: utter_bug_reported
+  - intent: ask_contact_info
+  - action: utter_contact
+
+- story: bug reported 2
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: report_bug
+  - action: utter_bug_reported
+  - intent: feedback
+  - action: utter_feedback
+
+- story: faq
+  steps:
+  - intent: ask_help
+  - action: utter_help
+  - intent: ask_faq
+  - action: utter_faq
+
+- story: ask name 1
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_creator
+  - action: utter_creator
+
+- story: ask name 2
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_technology
+  - action: utter_technology
+
+- story: ask name 3
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_capabilities
+  - action: utter_capabilities
+  - intent: ask_topics
+  - action: utter_entry_point
+
+- story: ask name 4
+  steps:
+  - intent: ask_name
+  - action: utter_name
+  - intent: ask_purpose
+  - action: utter_purpose
+  - intent: ask_topics
+  - action: utter_entry_point
+
+- story: what are you 1
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_creator
+  - action: utter_creator
+
+- story: what are you 2
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_creation
+  - action: utter_creation
+  - intent: ask_technology
+  - action: utter_technology
+
+- story: what are you 3
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_capabilities
+  - action: utter_capabilities
+  - intent: ask_topics
+  - action: utter_entry_point
+
+- story: what are you 4
+  steps:
+  - intent: what_are_you
+  - action: utter_what_i_am
+  - intent: ask_purpose
+  - action: utter_purpose
+  - intent: ask_topics
+  - action: utter_entry_point

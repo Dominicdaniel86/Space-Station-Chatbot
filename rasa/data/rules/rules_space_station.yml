@@ -1,0 +1,22 @@
+version: "3.1"
+
+rules:
+- rule: entrypoint 1
+  steps:
+  - intent: ask_what_else
+  - action: utter_entry_point
+
+- rule: entrypoint 2
+  steps:
+  - intent: ask_recommendations
+  - action: utter_entry_point
+
+- rule: entrypoint 3
+  steps:
+  - intent: ask_topics
+  - action: utter_entry_point
+
+- rule: fun fact
+  steps:
+  - intent: fun_fact
+  - action: utter_fun_fact

@@ -1,0 +1,12 @@
+version: "3.1"
+
+rules:
+- rule: current iss location call
+  steps:
+  - intent: current_iss_location
+  - action: action_current_iss_location
+
+- rule: future iss location call
+  steps:
+  - intent: future_location_call
+  - action: action_future_iss_location

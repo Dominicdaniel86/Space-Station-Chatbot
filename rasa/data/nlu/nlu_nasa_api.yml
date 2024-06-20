@@ -1,0 +1,75 @@
+version: "3.1"
+
+nlu:
+- intent: get_location
+  examples: |
+    - where is the iss
+    - location of the iss
+    - do you know the location of the iss
+    - what's the position of the ISS?
+    - can you tell me where the ISS is located?
+    - locate the international space station
+    - where's the ISS
+    - general location of the ISS
+    - space station location
+    - find the ISS in orbit
+    - geographical location of the ISS
+    - ISS orbit location
+
+- intent: current_iss_location
+  examples: |
+    - where is the iss in this moment
+    - the current location
+    - current
+    - where it currently is
+    - where is the ISS right now?
+    - current ISS position please
+    - show me where the ISS is currently
+    - exact location of the ISS at this moment
+    - find the current location of the ISS
+    - ISS location at this second
+    - where's the ISS at this instant?
+    - can you find the current ISS coordinates?
+    - live update on the ISS position
+    - track the ISS's current location
+    - currently
+    - right now
+    - in this moment
+
+- intent: future_iss_location
+  examples: |
+    - where will the iss be in the future
+    - tell me where the iss will be
+    - where will the ISS be tomorrow?
+    - predict the ISS's location for next week
+    - future trajectory of the ISS
+    - where is the ISS going to be in an hour?
+    - can you forecast the ISS's position in 30 minutes?
+    - ISS location in the future
+    - upcoming location of the ISS
+    - what will be the location of the ISS next month?
+    - future positions of the ISS
+    - track ISS's path for the next days
+    - in the future
+    - tomorrow
+    - next week
+    - next month
+    - next year
+    - in the future
+    - future
+    - in the next time
+
+- intent: future_location_call
+  examples: |
+    - iss location at:[2024-02-04:12:00](date)
+    - iss location at:[2024-02-04:12:00](date)
+    - iss location at:[2020-11-01:09:12](date)
+    - iss location at:[2025-02-03:01:00](date)
+    - iss location at:[2029-03-05:08:54](date)
+
+- regex: date
+  examples: |
+    - \b\d{4}-\d{2}-\d{2}:\d{2}:\d{2}\b
+
+entities:
+- date

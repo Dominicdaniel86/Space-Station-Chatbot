@@ -52,6 +52,17 @@ intents:
   - challenges
   - isolation
   - psychological_effects
+  - get_location
+  - current_iss_location
+  - future_iss_location
+  - future_location_call
+
+entities:
+  - date
+
+actions:
+  - action_current_iss_location
+  - action_future_iss_location
 
 responses:
   utter_your_welcome:
@@ -152,8 +163,6 @@ responses:
           - what challenges astronauts fear\n
           - why we even have space stations\n
           - ... and much more"
-  # - text: "Entry Point (Placeholder)"
-  # - text: "Entry Point (Placeholder)"
 
   utter_name:
   - text: "I am Spacemate, your AI-powered chatbot. That's the name my lovely creator gave me."
@@ -289,6 +298,17 @@ responses:
   - text: "Countries involved in space stations include the USA (NASA), Russia (Roscosmos), Europe (ESA), Japan (JAXA), and Canada (CSA) with the ISS."
   - text: "China operates its own space station, Tiangong, independently."
   - text: "Other countries, such as India and the United Arab Emirates, have expressed interest in developing their own space station capabilities in the future."
+
+  #######################################################
+  #######################################################
+  #######################################################
+  
+  utter_iss_location:
+  - text: "Sure, I can tell you that. Do you want to know the current location or it's location in the future?"
+
+  utter_future_location:
+  - text: "To get a future location you will need to type your request in the following format:\n
+          'iss location at:year-month-day:hour:minutes'"
 
 session_config:
   session_expiration_time: 60

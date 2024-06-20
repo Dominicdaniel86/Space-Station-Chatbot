@@ -1,0 +1,18 @@
+version: "3.1"
+
+stories:
+- story: nasa api 1
+  steps:
+  - intent: get_location
+  - action: utter_iss_location
+  - intent: current_iss_location
+  - action: action_current_iss_location
+
+- story: nasa api 2
+  steps:
+  - intent: get_location
+  - action: utter_iss_location
+  - intent: future_iss_location
+  - action: utter_future_location
+  - intent: future_location_call
+  - action: action_future_iss_location

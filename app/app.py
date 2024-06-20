@@ -14,9 +14,14 @@ def home():
 def sendmessage():
     message = request.form['message']
     print(message)
-    rasa_response = requests.post('http://localhost:5005/webhooks/rest/webhook', json={"message": message})
-
     responses = []
+    try:
+        rasa_response = requests.post('http://localhost:5005/webhooks/rest/webhook', json={"message": message})
+    except Exception as e:
+        print(f"error: {e}")
+        responses.append({"type": "text", "content": "Oh, it appears that I'm not availabe. Please try again later!"})
+        return jsonify(responses)
+
     for resp in rasa_response.json():
         if "text" in resp:
             responses.append({"type": "text", "content": resp["text"]})

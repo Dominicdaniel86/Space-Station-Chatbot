@@ -34,6 +34,17 @@ function sendMessage() {
             chat.insertBefore(newDiv, chat.firstChild);
 
             // document.getElementById("chat").appendChild(newDiv);
+        })
+        .catch((error) => {
+            console.error(error);
+            let newDiv = document.createElement("div");
+            newDiv.className = "message-bot";
+
+            let newP = document.createElement("p");
+            newP.textContent = "Oh, it appears that I'm not availabe. Please check your internet connection!";
+            newDiv.appendChild(newP);
+            let chat = document.getElementById("chat");
+            chat.insertBefore(newDiv, chat.firstChild);
         });
     }
 };

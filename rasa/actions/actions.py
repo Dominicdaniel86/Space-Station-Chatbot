@@ -58,6 +58,15 @@ def find_location(timestamp):
     return smaller_entry
 
 
+def format_timestamp(location):
+    parts = location.split(" ")
+    answer = f"The ISS at time: {parts[0]} will be at:\n \
+            x: {parts[1]}\n \
+            y: {parts[2]}\n \
+            z: {parts[3]}\n"
+    return answer
+
+
 class ActionCurrentIssLocation(Action):
 
     def name(self) -> Text:
@@ -69,8 +78,8 @@ class ActionCurrentIssLocation(Action):
         
         download_file()
         location = find_location(str(datetime.now()))
-
-        dispatcher.utter_message(text=f"location: {location}")
+        location = format_timestamp(location)
+        dispatcher.utter_message(text=f"{location}")
 
         return []
 
@@ -91,7 +100,8 @@ class ActionFutureIssLocation(Action):
         else:
             entity = tracker.latest_message['entities'][0]['value']
             location = find_location(entity)
-            dispatcher.utter_message(text=f"location: {location}")
+            location = format_timestamp(location)
+            dispatcher.utter_message(text=f"{location}")
 
         return []
 

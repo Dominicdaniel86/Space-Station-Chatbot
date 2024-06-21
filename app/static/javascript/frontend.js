@@ -49,6 +49,37 @@ function sendMessage() {
     }
 };
 
+function expandFeedback() {
+    let feedback = document.getElementById('feedback-expandable');
+    if(feedback.style.display === "none")
+        feedback.style.display = "block"
+    else
+        feedback.style.display = "none"
+}
+
+function saveFeedback() {
+    const name = document.getElementById("feedback-name").value;
+    const feedback = document.getElementById("feedback-content").value;
+    if(name!=="" && feedback!=="") {
+        document.getElementById("feedback-name").value = "";
+        document.getElementById("feedback-content").value = "";
+    }
+    const timestamp = new Date().toISOString();
+
+    const message = new URLSearchParams;
+    message.append("timestamp", timestamp);
+    message.append("name", name);
+    message.append("feedback", feedback);
+
+    fetch("http://localhost:5000/feedback", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: message.toString()
+    });
+}
+
 function checkKeyInput(event) {
     if(event.key === 'Enter')
         sendMessage();

@@ -28,7 +28,13 @@
         </div>
 
         <div class="feedback">
-            <button>Feedback</button>
+            <button style="margin-right: 25%;" onclick="expandFeedback()">Feedback</button>
+            <br><br><br><br>
+            <div id="feedback-expandable" style="display: none;">
+                <input id="feedback-name" type="text" placeholder="Your name" style="float:right">
+                <input id="feedback-content" type="text" placeholder="Your feedback" style="float:right">
+                <button style="float:right; margin-top: 10px; width: 74%;" onclick="saveFeedback()">Submit</button>
+            </div>
         </div>
         
         <script src="static/javascript/frontend.js" type="application/javascript"></script>

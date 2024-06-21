@@ -5,6 +5,7 @@ from flask import jsonify
 import requests
 
 app = Flask(__name__)
+feedback_file = "../data/feedback.txt"
 
 @app.route('/')
 def home():
@@ -31,6 +32,22 @@ def sendmessage():
             responses.append({"type": "buttons", "content": resp["buttons"]})
         
         return jsonify(responses)
+
+@app.route('/feedback', methods=['POST'])
+def feedback():
+    timestamp = request.form['timestamp']
+    name = request.form['name']
+    feedback = request.form['feedback']
+
+    input = [
+        'timestamp:' + str(timestamp) + '\n',
+        'name:' + str(name) + '\n',
+        'feedback:' + str(feedback) + '\n\n'
+    ]
+    with open(feedback_file, 'a') as file:
+        file.writelines(input)
+
+    return "feedback received"
 
 if __name__ == '__main__':
     app.run(debug=True)

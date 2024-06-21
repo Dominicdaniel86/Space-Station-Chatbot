@@ -66,7 +66,7 @@ actions:
 
 responses:
   utter_could_not_understand:
-  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?|confused"
 
   #######################################################
   #######################################################
@@ -83,9 +83,9 @@ responses:
   - text: "Take care! May your journey be safe and full of wonder!"
 
   utter_respectful_conversation:
-  - text: "Please refrain from using this language! I'm keeping this converstaion respectful and expect the same from you!"
-  - text: "I won't answer to that, I'm sorry. Please keep this conversations free from insults!"
-  - text: "I am always happy to help, but I demand a respecful tone. Please keep this conversation insult free."
+  - text: "Please refrain from using this language! I'm keeping this converstaion respectful and expect the same from you!|sad"
+  - text: "I won't answer to that, I'm sorry. Please keep this conversations free from insults!|sad"
+  - text: "I am always happy to help, but I demand a respecful tone. Please keep this conversation insult free.|sad"
 
   utter_easter_egg:
   - text: "General Kenobi! You are a bold one."
@@ -101,9 +101,9 @@ responses:
   - text: "Wonderful! I'm glad to hear that!"
 
   utter_worried:
-  - text: "Oh, I'm sorry to hear that. Mabye a joke might cheer you up?"
-  - text: "That's too bad! Might a joke help your mood?"
-  - text: "Oh no, I am sad to hear that. Wanna hear a joke?"
+  - text: "Oh, I'm sorry to hear that. Mabye a joke might cheer you up?|sad"
+  - text: "That's too bad! Might a joke help your mood?|sad"
+  - text: "Oh no, I am sad to hear that. Wanna hear a joke?|sad"
 
   utter_joke:
   - text: "Why don't astronauts get hungry after being blasted into space? Because they've just had a big launch!"
@@ -116,9 +116,9 @@ responses:
   - text: "The wonders of the space are always keeping me up and exiting! Thanks for asking!"
 
   utter_no_real_time:
-  - text: "Sorry, I am not able to process real time information like that."
-  - text: "I'm sorry, but I can't answer questions regarding location and time."
-  - text: "Sadly I can't process real time data."
+  - text: "Sorry, I am not able to process real time information like that.|confused"
+  - text: "I'm sorry, but I can't answer questions regarding location and time.|confused"
+  - text: "Sadly I can't process real time data.|confused"
 
   utter_good_feedback:
   - text: "Glad to hear! Do you want to use my feedback feature to improve my work?"
@@ -126,14 +126,14 @@ responses:
   - text: "Thank you for the positive feedback! Your input can help me to improve. Would you like to use my feedback feature to do so?"
 
   utter_bad_feedback:
-  - text: "Oh, I'm sorry for not fullfilling your expectations. If want to like to share your experience you can always use my feedback feature."
-  - text: "I apologize for the inconvenience. Your feedback is valuable, and I'd appreciate it if you could provide more details using my feedback feature."
-  - text: "I'm sorry to hear that. You feedback is important to me, and I'd like to understand how I can improve. Would you like to use my feedback feature?"
+  - text: "Oh, I'm sorry for not fullfilling your expectations. If want to like to share your experience you can always use my feedback feature.|sad"
+  - text: "I apologize for the inconvenience. Your feedback is valuable, and I'd appreciate it if you could provide more details using my feedback feature.|sad"
+  - text: "I'm sorry to hear that. You feedback is important to me, and I'd like to understand how I can improve. Would you like to use my feedback feature?|sad"
 
   utter_denied:
-  - text: "Oh sorry. If you are sure, that somethings wrong or not completely right, you are always free to use my feedback feature!"
-  - text: "Oh no, sorry for that. I always thrive to give the best responses. If somethings wrong, please regard using my feedback feature to improve my quality!"
-  - text: "That's too bad. If you think somethings not true or not right, you can always use my feedback feature to correct my answers!"
+  - text: "Oh sorry. If you are sure, that somethings wrong or not completely right, you are always free to use my feedback feature!|confused"
+  - text: "Oh no, sorry for that. I always thrive to give the best responses. If somethings wrong, please regard using my feedback feature to improve my quality!|confused"
+  - text: "That's too bad. If you think somethings not true or not right, you can always use my feedback feature to correct my answers!|confused"
 
   utter_faq:
   - text: "Q: What are you?\n
@@ -149,9 +149,9 @@ responses:
   - text: "Sure thing, what is the problem? Do you want to see my capabilities, report a bug, give feedback or look at a FAQ?"
 
   utter_bug_reported:
-  - text: "Oh, that's too bad. I can not react to individual bugs, but you can share more information about it with my feedback feature!"
-  - text: "Sorry to hear that. Do you want to use my feedback feature to report the bug?"
-  - text: "That's too bad. While I can't react to your individual bug, I would appreciate if you would use my feedback feature to improve me."
+  - text: "Oh, that's too bad. I can not react to individual bugs, but you can share more information about it with my feedback feature!|sad"
+  - text: "Sorry to hear that. Do you want to use my feedback feature to report the bug?|sad"
+  - text: "That's too bad. While I can't react to your individual bug, I would appreciate if you would use my feedback feature to improve me.|sad"
 
   utter_contact:
   - text: "You contact the creator and maintainer of this chatbot through this email-address: Dominic_Daniel.Kraemer@Student.Reutlingen-University.de"

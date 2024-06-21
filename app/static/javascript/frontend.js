@@ -27,6 +27,19 @@ function sendMessage() {
             let newDiv = document.createElement("div");
             newDiv.className = "message-bot";
 
+            if(botMessage.includes("|sad")) {
+                botMessage = botMessage.replace("|sad", "");
+                document.getElementById('robo-image').src = "static/robo_images/dall-e-image-sad-cropped2.png";
+            }
+            else if(botMessage.includes("|confused")) {
+                botMessage = botMessage.replace("|confused", "");
+                document.getElementById('robo-image').src = "static/robo_images/dall-e-image-confused-cropped2.png";
+            }
+            else {
+                document.getElementById('robo-image').src = "static/robo_images/dall-e-image-happy-cropped2.png";
+            }
+                
+
             let newP = document.createElement("p");
             newP.textContent = botMessage;
             newDiv.appendChild(newP);

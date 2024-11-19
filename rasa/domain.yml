@@ -111,7 +111,7 @@ responses:
   - text: "What is an astronaut's favorite part of a computer? The space bar!"
 
   utter_mood:
-  - text: "I am very well, thanks for asking! But it might not be in the traditional way, as a human might experience it, hehe."
+  # - text: "I am very well, thanks for asking! But it might not be in the traditional way, as a human might experience it, hehe."
   - text: "Everythins perfect, thank you."
   - text: "The wonders of the space are always keeping me up and exiting! Thanks for asking!"
 
@@ -292,9 +292,7 @@ responses:
   - text: "The Alpha Magnetic Spectrometer (AMS) experiment on the ISS has provided valuable data on cosmic rays and dark matter."
 
   utter_stations:
-  - text: "The most well-known space station is the International Space Station (ISS), a joint project involving NASA, Roscosmos, ESA, JAXA, and CSA."
-  - text: "China operates the Tiangong space station, which began construction in 2021 and aims to be fully operational by 2022."
-  - text: "The now-decommissioned Mir space station, operated by the Soviet Union and later Russia, was in orbit from 1986 to 2001."
+  - text: "The most well-known space station is the International Space Station (ISS), a joint project involving NASA, Roscosmos, ESA, JAXA, and CSA. China operates the Tiangong space station, which began construction in 2021 and aims to be fully operational by 2022. The now-decommissioned Mir space station, operated by the Soviet Union and later Russia, was in orbit from 1986 to 2001."
 
   utter_planned_stations:
   - text: "Planned space stations include the Lunar Gateway, a NASA-led project to support missions to the Moon and beyond."
@@ -302,9 +300,7 @@ responses:
   - text: "Private companies like Axiom Space are developing commercial space stations to support research and tourism."
 
   utter_station_nations:
-  - text: "Countries involved in space stations include the USA (NASA), Russia (Roscosmos), Europe (ESA), Japan (JAXA), and Canada (CSA) with the ISS."
-  - text: "China operates its own space station, Tiangong, independently."
-  - text: "Other countries, such as India and the United Arab Emirates, have expressed interest in developing their own space station capabilities in the future."
+  - text: "Countries involved in space stations include the USA (NASA), Russia (Roscosmos), Europe (ESA), Japan (JAXA), and Canada (CSA) with the ISS. China operates its own space station, Tiangong, independently. Other countries, such as India and the United Arab Emirates, have expressed interest in developing their own space station capabilities in the future."
 
   #######################################################
   #######################################################

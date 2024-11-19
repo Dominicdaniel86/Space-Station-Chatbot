@@ -5,6 +5,7 @@ from rasa_sdk.executor import CollectingDispatcher
 import os.path
 import urllib.request
 from datetime import datetime
+import math
 
 filepath = "../data/iss-location.txt"
 url = "https://nasa-public-data.s3.amazonaws.com/iss-coords/current/ISS_OEM/ISS.OEM_J2K_EPH.txt"
@@ -60,10 +61,21 @@ def find_location(timestamp):
 
 def format_timestamp(location):
     parts = location.split(" ")
-    answer = f"The ISS at time: {parts[0]} will be at:\n \
-            x: {parts[1]}\n \
-            y: {parts[2]}\n \
-            z: {parts[3]}\n"
+    timestamp = parts[0]
+    x = float(parts[1])
+    y = float(parts[2])
+    z = float(parts[3])
+
+    r = math.sqrt(x**2 + y**2 + z**2)
+    lat = math.degrees(math.asin(z / r))
+    lon = math.degrees(math.atan2(y, x))
+
+    answer = f"The ISS at time: {timestamp} will be at:\n \
+            Latitude: {lat}\n \
+            Longitude: {lon}\n \
+            x: {x}\n \
+            y: {y}\n \
+            z: {z}\n"
     return answer
 
 

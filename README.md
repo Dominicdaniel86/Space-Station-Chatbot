@@ -1,51 +1,51 @@
 # Space Station Chatbot
 
-## Anforderungen
+## Requirements
 
-- Einen regelbasierten Chatbot aufbauen
-- Webanwendung, welche unter localhost läuft
-- Kurze Entwicklungsdauer (~2 Monate)
-- Kein zu hoher Tech-Stack, Technologien mit Vorkenntnissen einsetzen
-- Themengebiete außerhalb des Scopes sollen kompetent gemieden werden
+- Build a rule-based chatbot
+- Web application running locally (localhost)
+- Short development time (~2 months)
+- Keep the tech stack low, use technologies with existing expertise
+- Competently avoid topics outside the defined scope
 
-### Funktionsumfang
+### Functional Scope
 
-- Chatbot, welcher Fragen eines gewissen Rahmens beantworten kann
-- Simple, leicht bedienbare UI, mit Weltraum-Thematik
-- Einfache Login-Funktion mit vorgefertigten Usern (Datenbank)
-- Integration von APIs mit erweiterten Informationen zum Themengebiet
-- Dokumentation auf GitLab, samt Interaktionsfluss
+- Chatbot capable of answering questions within a defined range
+- Simple, easy-to-use UI with a space-themed design
+- Basic login functionality with predefined users (database)
+- Integration of APIs for extended information on the topic
+- Documentation on GitLab, including interaction flow
 
-### Optionaler Funktionsumfang/ Aussicht
+### Optional Features/ Outlook
 
-- Authentifizierung und Autorisierung
-- Skalierbarkeit mit mehreren Nutzern
-- Datenschutz in der Datenbank
-- Mehrsprachigkeit
+- Authentication and authorization
+- Scalability for multiple users
+- Data privacy in the database
+- Multilingual support
 - Logging
-- Analyse- und Feedbacktools
-- Testing-Strategie
+- Analytics and feedback tools
+- Testing strategy
 
-## Thematik und Inhalt
+## Theme and Content
 
-- Grundlegende Informationen über das Leben, der alltäglichen Arbeit und Experimenten auf einer Raumstation
-- Informationen zum Training und Ausbildung der Astronauten
-- Bedeutung der Raumfahrttechnologie
-- Zielgruppen: Schüler, Studenten und angehende Weltraumpiloten
+- Basic information about life, daily work, and experiments on a space station
+- Information on astronaut training and education
+- Importance of spaceflight technology
+- Target audience: Students, young professionals, and aspiring space pilots
 
-### Erweiterter Scope
+### Extended Scope
 
-- Herausforderungen und psychologische Auswirkungen
+- Challenges and psychological impacts
 
-### Umfangreicher Scope
+### Comprehensive Scope
 
-- Zukünftige Raumfahrtmissionen
-- Aufbau von Raumkolonien
-- Rolle der Raumfahrt in der Zukunft der Menschheit
+- Future space missions
+- Building space colonies
+- Role of spaceflight in the future of humanity
 
-## Technologieauswahl
+## Technology Selection
 
-### Programmiersprache
+### Programming Language
 
 - [Python]
 - Java
@@ -53,45 +53,45 @@
 - Ruby
 - C#
 
-Python für die Logik des Chatbots
+Python for chatbot logic
 
-- Einfachheit und Lesbarkeit
-- Große Anzahl an Bibliotheken (NLTK, spaCy)
-- Mangelnde Skalierbarkeit und Leistung für den Scope ausreichend
-- Gute Integration mit vielen Systemen und Frameworks
-- Gute Dokumentation
+- Simplicity and readability
+- Wide range of libraries (NLTK, spaCy)
+- Scalability and performance limitations suitable for this scope
+- Good integration with many systems and frameworks
+- Well-documented
 
-JavaScript für die Webinteraktionen
+JavaScript for web interactions
 
-- Gute Ergänzung zu Python
-- Für die Frontend-Entwicklung
+- Complements Python well
+- Suited for frontend development
 
-### Chatbot-Frameworks
+### Chatbot Frameworks
 
-Kategorien:
+Criteria:
 
-- Gute Integration mit Web-Frameworks
-- Gute Dokumentation und leicht Verständlich, durch die kurze Entwicklungsdauer
-- Regelbasierter Ansatz
-- Generell und nicht spezialisiert
+- Good integration with web frameworks
+- Well-documented and easy to understand, given the short development time
+- Rule-based approach
+- General-purpose, not overly specialized
 
-Auswahl:
+Selection:
 
-- Botpress (persönliche Präferenz, Fokus auf Python statt JS)
+- Botpress (personal preference, focusing on Python rather than JS)
 - [Rasa]
-- ChatterBot (doch zu einfach, evtl. schwerer in Web-Framework einbindbar)
-- Microsoft Bot Framework (zu komplex)
-- Dialogflow (Zwang zur Nutzung der Google-Infrastruktur)
-- Wit.ai (eventuell beschränkte Funktionsoptionen)
+- ChatterBot (too simple, potentially harder to integrate into a web framework)
+- Microsoft Bot Framework (too complex)
+- Dialogflow (requires Google infrastructure)
+- Wit.ai (potentially limited functionality options)
 
-### Web-Framework
+### Web Framework
 
 - [Flask]
-- Django (zu starr und schwergewichtig für den Scope)
+- Django (too rigid and heavyweight for this scope)
 
-### Weitere Komponenten
+### Additional Components
 
-- Datenbank
-- API-Anbindungen
-- Container-Technologie
-- Logging, Testing und Analytik
+- Database
+- API integrations
+- Container technology
+- Logging, testing, and analytics

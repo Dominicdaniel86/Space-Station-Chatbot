@@ -2,10 +2,12 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from flask import jsonify
+from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
 feedback_file = "../data/feedback.txt"
+CORS(app)  # enable CORS
 
 @app.route('/')
 def home():
